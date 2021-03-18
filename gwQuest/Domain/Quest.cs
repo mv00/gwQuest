@@ -9,7 +9,7 @@ namespace gwQuest.Domain
         public Uri Uri { get; }
         public bool Primary { get; }
         public Profession Profession { get; }
-        public bool Completed { get; }
+        public bool Completed { get; set; }
 
         public Quest(string name, Uri uri, bool primary, Profession profession, bool completed)
         {

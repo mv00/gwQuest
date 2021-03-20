@@ -37,6 +37,6 @@
     <EmbeddedResource Update="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Repository\ascalon.json" />
+    <EmbeddedResource Include="Repository\quests.json" />
   </ItemGroup>
 </Project>

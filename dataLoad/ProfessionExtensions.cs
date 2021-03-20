@@ -1,4 +1,6 @@
-﻿namespace gwQuest.Domain
+﻿using gwQuest.Domain;
+
+namespace dataLoad
 {
     public static class ProfessionExtensions
     {

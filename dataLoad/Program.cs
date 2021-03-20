@@ -11,7 +11,7 @@ namespace dataLoad
     {
         static void Main(string[] args)
         {
-            var doc = File.ReadAllText(@"C:\Users\Matte\Downloads\List of Prophecies quests - Guild Wars Wiki (GWW).html");
+            var doc = File.ReadAllText(@"C:\Users\Matte\Downloads\ns.html");
             var xml = new XmlDocument();
             xml.LoadXml(doc);
 
@@ -33,7 +33,7 @@ namespace dataLoad
                 var profession = questInfo[2]?.FirstChild?.FirstChild?.Value;
                 var professionToAdd = profession.IsProfession() ? Profession.None : profession.GetProfession();
 
-                var questItem = new Quest(name, uri, primary, professionToAdd, Campaign.Prophecies , false);
+                var questItem = new Quest(name, uri, primary, professionToAdd, Campaign.Prophecies, Region.NorthernShiverpeaks, false);
                 questList.Add(questItem);
             }
 

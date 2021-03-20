@@ -3,6 +3,7 @@ using gwQuest.Repository;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Diagnostics;
 using System.Drawing;
 using System.IO;
@@ -13,11 +14,14 @@ namespace gwQuest
 {
     public partial class Form1 : Form
     {
+        private readonly List<Profession> _professions;
+        private readonly IQuestRepository _repository;
+        private readonly ISettingsRepository _settingsRepository;
+
         private Quest _activeQuest;
-        private IEnumerable<Quest> _quests => _repository.GetQuests();
-        private List<Profession> _professions;
-        private IQuestRepository _repository { get; }
-        private ISettingsRepository _settingsRepository { get; }
+        private IEnumerable<Quest> Quests => _repository.GetQuests();
+        private Campaign _activeCampaign;
+        private Domain.Region _activeRegion;
 
         public Form1(IQuestRepository questRepository, ISettingsRepository settingsRepository)
         {
@@ -28,14 +32,16 @@ namespace gwQuest
 
             InitializeComponent();
             SetupContainers();
-            SetQuestList();
         }
 
         private void SetupContainers()
         {
             //campaign
-            comboBoxCampaign.DataSource = new Campaign[] { Campaign.Prophecies, Campaign.Cantha, Campaign.Nightfall, Campaign.EyeOfTheNorth };
-            tabControl.SelectedIndexChanged += new EventHandler(Tabs_SelectedIndexChanged);
+            comboBoxCampaign.DataSource = CampaignExtensions.GetCampaigns();
+            _activeCampaign = ((string)comboBoxCampaign.SelectedItem).ToCampaign();
+
+            //region
+            comboBoxRegion.DataSource = ((string)comboBoxCampaign.SelectedItem).ToCampaign().GetRegions();
 
             //listview for quests
             var imageList = new ImageList() { };
@@ -77,18 +83,24 @@ namespace gwQuest
             comboBoxProfessionSecondary.Items.Add(Profession.Ranger);
             comboBoxProfessionSecondary.Items.Add(Profession.Elementalist);
             comboBoxProfessionSecondary.Items.Add(Profession.Mesmer);
-
+           
             comboBoxProfessionSecondary.SelectedIndex = (int)_professions.Skip(1).First();
+
+            RefreshQuestList();
         }
 
-        private void SetQuestList()
+        private void RefreshQuestList()
         {
+            var index = listView1.Items.Count > 0 ? listView1.SelectedItems[0]?.Index ?? 0 : 0;
+
+            listView1.SelectedItems.Clear();
             listView1.Items.Clear();
-            ActiveQuestChanged(null, null);
 
             var filterQuests = _professions[0] != Profession.None && _professions[1] != Profession.None;
-            var currentCampaign = (Campaign)comboBoxCampaign.SelectedItem;
-            IEnumerable<Quest> questsToShow = _quests.Where(p => p.Campaign.Name == currentCampaign.Name);
+            var currentCampaign = ((string) comboBoxCampaign.SelectedItem).ToCampaign();
+            var currentRegion = ((string) comboBoxRegion.SelectedItem).ToRegion();
+
+            IEnumerable<Quest> questsToShow = Quests.Where(p => p.Campaign == currentCampaign && p.Region == currentRegion );
 
             if (!checkBoxShowCompleted.Checked)
                 questsToShow = questsToShow.Where(q => !q.Completed);
@@ -141,10 +153,16 @@ namespace gwQuest
                 listView1.Alignment = ListViewAlignment.SnapToGrid;
                 listView1.HideSelection = false;
                 listView1.AutoArrange = true;
-                listView1.Items.Add(listItem);
+                listView1.Items.Add(listItem);               
             }
-        }
 
+            if (listView1.Items.Count > 0)
+                listView1.Items[index].Selected = true;
+
+            listView1.Select();
+        }
+        
+        #region events
         private void ActiveQuestChanged(object sender, EventArgs e)
         {
             if (listView1.SelectedItems.Count == 0)
@@ -181,12 +199,6 @@ namespace gwQuest
             labelQuestName.Text = _activeQuest.Name;
         }
 
-        void Tabs_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            var x = (TabControl)sender;
-            var y = x.SelectedIndex;
-        }
-
         private void linkLabelQuest_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             var url = _activeQuest.Uri.ToString().Replace("&", "^&");
@@ -198,17 +210,17 @@ namespace gwQuest
             _activeQuest.Completed = true;
             _repository.Update(_activeQuest);
 
-            SetQuestList();
+            RefreshQuestList();
         }
 
         private void comboBoxProfessionMain_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (_professions.ToList()[0] == (Profession)comboBoxProfessionMain.SelectedItem)
+            if (_professions[0] == (Profession)comboBoxProfessionMain.SelectedItem)
                 return;
 
             _professions[0] = (Profession)comboBoxProfessionMain.SelectedItem;
             _settingsRepository.Save(_professions);
-            SetQuestList();
+            RefreshQuestList();
         }
 
         private void comboBoxProfessionSecondary_SelectedIndexChanged(object sender, EventArgs e)
@@ -218,17 +230,49 @@ namespace gwQuest
 
             _professions[1] = (Profession)comboBoxProfessionSecondary.SelectedItem;
             _settingsRepository.Save(_professions);
-            SetQuestList();
+            RefreshQuestList();
         }
 
         private void checkBoxShowCompleted_CheckedChanged(object sender, EventArgs e)
         {
-            SetQuestList();
+            RefreshQuestList();
         }
 
         private void comboBoxCampaign_SelectedIndexChanged(object sender, System.EventArgs e)
         {
-            SetQuestList();
+            var newCampaign = ((string)comboBoxCampaign.SelectedItem).ToCampaign();
+            if (_activeCampaign == 0)
+            {
+                _activeCampaign = newCampaign;
+                return;
+            }
+
+            if (_activeCampaign == newCampaign)
+            {
+                return;
+            }
+
+            _activeCampaign = newCampaign;
+            RefreshQuestList();
         }
+
+        private void comboBoxRegion_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            var newRegion = ((string)comboBoxRegion.SelectedItem).ToRegion();
+            if(_activeRegion == 0)
+            {
+                _activeRegion = newRegion;
+                return;
+            }
+
+            if (_activeRegion == newRegion)
+            {
+                return;
+            }
+
+            _activeRegion = newRegion;
+            RefreshQuestList();
+        }
+        #endregion
     }
 }

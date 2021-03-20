@@ -41,7 +41,7 @@ namespace gwQuest.Repository
         {
             if (!File.Exists(Path.Combine(Environment.CurrentDirectory, _filePath)))
             {
-                using Stream stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("gwQuest.Repository.ascalon.json");
+                using Stream stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("gwQuest.Repository.quests.json");
                 using StreamReader reader = new StreamReader(stream);
                 string result = reader.ReadToEnd();
                 _quests = JsonConvert.DeserializeObject<List<Quest>>(result);

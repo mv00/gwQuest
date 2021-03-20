@@ -1,5 +1,6 @@
 ﻿using gwQuest.Domain;
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
@@ -38,7 +39,7 @@ namespace gwQuest.Repository
 
         public void Load()
         {
-            if (!File.Exists(_filePath))
+            if (!File.Exists(Path.Combine(Environment.CurrentDirectory, _filePath)))
             {
                 using Stream stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("gwQuest.Repository.ascalon.json");
                 using StreamReader reader = new StreamReader(stream);

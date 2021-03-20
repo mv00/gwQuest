@@ -4,7 +4,7 @@
     {
         public string Name { get; }
 
-        private Campaign(string name)
+        public Campaign(string name)
         {
             Name = name;
         }

@@ -33,11 +33,11 @@ namespace dataLoad
                 var profession = questInfo[2]?.FirstChild?.FirstChild?.Value;
                 var professionToAdd = profession.IsProfession() ? Profession.None : profession.GetProfession();
 
-                var questItem = new Quest(name, uri, primary, professionToAdd, false);
+                var questItem = new Quest(name, uri, primary, professionToAdd, Campaign.Prophecies , false);
                 questList.Add(questItem);
             }
 
-            var json = JsonConvert.SerializeObject(questList);
+            var json = JsonConvert.SerializeObject(questList, Newtonsoft.Json.Formatting.Indented);
         }
     }
 }

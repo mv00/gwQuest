@@ -4,6 +4,9 @@
     "Uri": "https://wiki.guildwars.com/wiki/A_Cure_for_Ralena",
     "Primary": false,
     "Profession": 6,
+    "Campaign": {
+      "Name": "Prophecies"
+    },
     "Completed": false
   },
   {
@@ -11,6 +14,9 @@
     "Uri": "https://wiki.guildwars.com/wiki/A_Mission_of_Peace",
     "Primary": false,
     "Profession": 0,
+    "Campaign": {
+      "Name": "Prophecies"
+    },
     "Completed": false
   },
   {
@@ -18,6 +24,9 @@
     "Uri": "https://wiki.guildwars.com/wiki/Althea%27s_Ashes",
     "Primary": false,
     "Profession": 0,
+    "Campaign": {
+      "Name": "Prophecies"
+    },
     "Completed": false
   },
   {
@@ -25,6 +34,9 @@
     "Uri": "https://wiki.guildwars.com/wiki/Army_Life",
     "Primary": false,
     "Profession": 1,
+    "Campaign": {
+      "Name": "Prophecies"
+    },
     "Completed": false
   },
   {
@@ -32,6 +44,9 @@
     "Uri": "https://wiki.guildwars.com/wiki/Barradin%27s_Advance",
     "Primary": false,
     "Profession": 0,
+    "Campaign": {
+      "Name": "Prophecies"
+    },
     "Completed": false
   },
   {
@@ -39,6 +54,9 @@
     "Uri": "https://wiki.guildwars.com/wiki/Barradin%27s_Stand",
     "Primary": false,
     "Profession": 0,
+    "Campaign": {
+      "Name": "Prophecies"
+    },
     "Completed": false
   },
   {
@@ -46,6 +64,9 @@
     "Uri": "https://wiki.guildwars.com/wiki/Caravan_in_Trouble",
     "Primary": false,
     "Profession": 0,
+    "Campaign": {
+      "Name": "Prophecies"
+    },
     "Completed": false
   },
   {
@@ -53,6 +74,9 @@
     "Uri": "https://wiki.guildwars.com/wiki/Casualty_Report",
     "Primary": false,
     "Profession": 0,
+    "Campaign": {
+      "Name": "Prophecies"
+    },
     "Completed": false
   },
   {
@@ -60,6 +84,9 @@
     "Uri": "https://wiki.guildwars.com/wiki/Charr_Reinforcements",
     "Primary": false,
     "Profession": 4,
+    "Campaign": {
+      "Name": "Prophecies"
+    },
     "Completed": false
   },
   {
@@ -67,6 +94,9 @@
     "Uri": "https://wiki.guildwars.com/wiki/Cities_of_Ascalon",
     "Primary": false,
     "Profession": 0,
+    "Campaign": {
+      "Name": "Prophecies"
+    },
     "Completed": false
   },
   {
@@ -74,6 +104,9 @@
     "Uri": "https://wiki.guildwars.com/wiki/Counting_the_Fallen",
     "Primary": false,
     "Profession": 0,
+    "Campaign": {
+      "Name": "Prophecies"
+    },
     "Completed": false
   },
   {
@@ -81,6 +114,9 @@
     "Uri": "https://wiki.guildwars.com/wiki/Death_in_the_Ruins",
     "Primary": false,
     "Profession": 3,
+    "Campaign": {
+      "Name": "Prophecies"
+    },
     "Completed": false
   },
   {
@@ -88,6 +124,9 @@
     "Uri": "https://wiki.guildwars.com/wiki/Defend_the_Wall",
     "Primary": true,
     "Profession": 0,
+    "Campaign": {
+      "Name": "Prophecies"
+    },
     "Completed": false
   },
   {
@@ -95,6 +134,9 @@
     "Uri": "https://wiki.guildwars.com/wiki/Deliver_a_Message_to_My_Wife",
     "Primary": false,
     "Profession": 0,
+    "Campaign": {
+      "Name": "Prophecies"
+    },
     "Completed": false
   },
   {
@@ -102,6 +144,9 @@
     "Uri": "https://wiki.guildwars.com/wiki/Elemental_Knowledge",
     "Primary": false,
     "Profession": 5,
+    "Campaign": {
+      "Name": "Prophecies"
+    },
     "Completed": false
   },
   {
@@ -109,6 +154,9 @@
     "Uri": "https://wiki.guildwars.com/wiki/Endangered_Species",
     "Primary": false,
     "Profession": 4,
+    "Campaign": {
+      "Name": "Prophecies"
+    },
     "Completed": false
   },
   {
@@ -116,6 +164,9 @@
     "Uri": "https://wiki.guildwars.com/wiki/Experimental_Elixir",
     "Primary": false,
     "Profession": 6,
+    "Campaign": {
+      "Name": "Prophecies"
+    },
     "Completed": false
   },
   {
@@ -123,6 +174,9 @@
     "Uri": "https://wiki.guildwars.com/wiki/Fallen_Soldiers",
     "Primary": false,
     "Profession": 3,
+    "Campaign": {
+      "Name": "Prophecies"
+    },
     "Completed": false
   },
   {
@@ -130,6 +184,9 @@
     "Uri": "https://wiki.guildwars.com/wiki/Family_Ties_(Prophecies_quest)",
     "Primary": false,
     "Profession": 0,
+    "Campaign": {
+      "Name": "Prophecies"
+    },
     "Completed": false
   },
   {
@@ -137,6 +194,9 @@
     "Uri": "https://wiki.guildwars.com/wiki/Fires_in_the_East",
     "Primary": false,
     "Profession": 0,
+    "Campaign": {
+      "Name": "Prophecies"
+    },
     "Completed": false
   },
   {
@@ -144,6 +204,9 @@
     "Uri": "https://wiki.guildwars.com/wiki/Fires_in_the_North",
     "Primary": false,
     "Profession": 0,
+    "Campaign": {
+      "Name": "Prophecies"
+    },
     "Completed": false
   },
   {
@@ -151,6 +214,9 @@
     "Uri": "https://wiki.guildwars.com/wiki/Frontier_Gate_Fugitives",
     "Primary": false,
     "Profession": 0,
+    "Campaign": {
+      "Name": "Prophecies"
+    },
     "Completed": false
   },
   {
@@ -158,6 +224,9 @@
     "Uri": "https://wiki.guildwars.com/wiki/Garfazz_Bloodfang_(quest)",
     "Primary": false,
     "Profession": 0,
+    "Campaign": {
+      "Name": "Prophecies"
+    },
     "Completed": false
   },
   {
@@ -165,6 +234,9 @@
     "Uri": "https://wiki.guildwars.com/wiki/Gargoyle_Trouble",
     "Primary": false,
     "Profession": 1,
+    "Campaign": {
+      "Name": "Prophecies"
+    },
     "Completed": false
   },
   {
@@ -172,6 +244,9 @@
     "Uri": "https://wiki.guildwars.com/wiki/Hammer_and_Anvil",
     "Primary": false,
     "Profession": 0,
+    "Campaign": {
+      "Name": "Prophecies"
+    },
     "Completed": false
   },
   {
@@ -179,6 +254,9 @@
     "Uri": "https://wiki.guildwars.com/wiki/Helping_the_People_of_Ascalon",
     "Primary": false,
     "Profession": 0,
+    "Campaign": {
+      "Name": "Prophecies"
+    },
     "Completed": false
   },
   {
@@ -186,6 +264,9 @@
     "Uri": "https://wiki.guildwars.com/wiki/In_Memory_of_Paulus",
     "Primary": false,
     "Profession": 2,
+    "Campaign": {
+      "Name": "Prophecies"
+    },
     "Completed": false
   },
   {
@@ -193,6 +274,9 @@
     "Uri": "https://wiki.guildwars.com/wiki/Into_the_Breach",
     "Primary": false,
     "Profession": 1,
+    "Campaign": {
+      "Name": "Prophecies"
+    },
     "Completed": false
   },
   {
@@ -200,6 +284,9 @@
     "Uri": "https://wiki.guildwars.com/wiki/Mesmerizing_the_Enemy",
     "Primary": false,
     "Profession": 6,
+    "Campaign": {
+      "Name": "Prophecies"
+    },
     "Completed": false
   },
   {
@@ -207,6 +294,9 @@
     "Uri": "https://wiki.guildwars.com/wiki/Military_Matters",
     "Primary": false,
     "Profession": 1,
+    "Campaign": {
+      "Name": "Prophecies"
+    },
     "Completed": false
   },
   {
@@ -214,6 +304,9 @@
     "Uri": "https://wiki.guildwars.com/wiki/Oberan%27s_Rage",
     "Primary": false,
     "Profession": 3,
+    "Campaign": {
+      "Name": "Prophecies"
+    },
     "Completed": false
   },
   {
@@ -221,6 +314,9 @@
     "Uri": "https://wiki.guildwars.com/wiki/Protecting_Ascalon",
     "Primary": false,
     "Profession": 2,
+    "Campaign": {
+      "Name": "Prophecies"
+    },
     "Completed": false
   },
   {
@@ -228,6 +324,9 @@
     "Uri": "https://wiki.guildwars.com/wiki/Rastin%27s_Ritual",
     "Primary": false,
     "Profession": 0,
+    "Campaign": {
+      "Name": "Prophecies"
+    },
     "Completed": false
   },
   {
@@ -235,6 +334,9 @@
     "Uri": "https://wiki.guildwars.com/wiki/Recruits_for_Hollis",
     "Primary": false,
     "Profession": 0,
+    "Campaign": {
+      "Name": "Prophecies"
+    },
     "Completed": false
   },
   {
@@ -242,6 +344,9 @@
     "Uri": "https://wiki.guildwars.com/wiki/Regent_Valley_Defense",
     "Primary": false,
     "Profession": 0,
+    "Campaign": {
+      "Name": "Prophecies"
+    },
     "Completed": false
   },
   {
@@ -249,6 +354,9 @@
     "Uri": "https://wiki.guildwars.com/wiki/Replacement_Healers",
     "Primary": false,
     "Profession": 2,
+    "Campaign": {
+      "Name": "Prophecies"
+    },
     "Completed": false
   },
   {
@@ -256,6 +364,9 @@
     "Uri": "https://wiki.guildwars.com/wiki/Ruins_of_Surmia_(quest)",
     "Primary": true,
     "Profession": 0,
+    "Campaign": {
+      "Name": "Prophecies"
+    },
     "Completed": false
   },
   {
@@ -263,6 +374,9 @@
     "Uri": "https://wiki.guildwars.com/wiki/Scavengers_in_Old_Ascalon",
     "Primary": false,
     "Profession": 0,
+    "Campaign": {
+      "Name": "Prophecies"
+    },
     "Completed": false
   },
   {
@@ -270,6 +384,9 @@
     "Uri": "https://wiki.guildwars.com/wiki/Scorched_Earth_(Prophecies_quest)",
     "Primary": false,
     "Profession": 5,
+    "Campaign": {
+      "Name": "Prophecies"
+    },
     "Completed": false
   },
   {
@@ -277,6 +394,9 @@
     "Uri": "https://wiki.guildwars.com/wiki/Shalev%27s_Task",
     "Primary": false,
     "Profession": 5,
+    "Campaign": {
+      "Name": "Prophecies"
+    },
     "Completed": false
   },
   {
@@ -284,6 +404,9 @@
     "Uri": "https://wiki.guildwars.com/wiki/Sowing_Seeds",
     "Primary": false,
     "Profession": 2,
+    "Campaign": {
+      "Name": "Prophecies"
+    },
     "Completed": false
   },
   {
@@ -291,6 +414,9 @@
     "Uri": "https://wiki.guildwars.com/wiki/Supplies_for_the_Duke",
     "Primary": false,
     "Profession": 0,
+    "Campaign": {
+      "Name": "Prophecies"
+    },
     "Completed": false
   },
   {
@@ -298,6 +424,9 @@
     "Uri": "https://wiki.guildwars.com/wiki/Symon%27s_History_of_Ascalon",
     "Primary": false,
     "Profession": 0,
+    "Campaign": {
+      "Name": "Prophecies"
+    },
     "Completed": false
   },
   {
@@ -305,6 +434,9 @@
     "Uri": "https://wiki.guildwars.com/wiki/The_Ambassador%27s_Quandary",
     "Primary": false,
     "Profession": 0,
+    "Campaign": {
+      "Name": "Prophecies"
+    },
     "Completed": false
   },
   {
@@ -312,6 +444,9 @@
     "Uri": "https://wiki.guildwars.com/wiki/The_Charr_Patrol",
     "Primary": false,
     "Profession": 4,
+    "Campaign": {
+      "Name": "Prophecies"
+    },
     "Completed": false
   },
   {
@@ -319,6 +454,9 @@
     "Uri": "https://wiki.guildwars.com/wiki/The_Charr_Staging_Area",
     "Primary": false,
     "Profession": 4,
+    "Campaign": {
+      "Name": "Prophecies"
+    },
     "Completed": false
   },
   {
@@ -326,6 +464,9 @@
     "Uri": "https://wiki.guildwars.com/wiki/The_Duke%27s_Daughter",
     "Primary": false,
     "Profession": 0,
+    "Campaign": {
+      "Name": "Prophecies"
+    },
     "Completed": false
   },
   {
@@ -333,6 +474,9 @@
     "Uri": "https://wiki.guildwars.com/wiki/The_Geomancer%27s_Test",
     "Primary": false,
     "Profession": 5,
+    "Campaign": {
+      "Name": "Prophecies"
+    },
     "Completed": false
   },
   {
@@ -340,6 +484,9 @@
     "Uri": "https://wiki.guildwars.com/wiki/The_King%27s_Message",
     "Primary": false,
     "Profession": 0,
+    "Campaign": {
+      "Name": "Prophecies"
+    },
     "Completed": false
   },
   {
@@ -347,6 +494,9 @@
     "Uri": "https://wiki.guildwars.com/wiki/The_Krytan_Ambassador",
     "Primary": true,
     "Profession": 0,
+    "Campaign": {
+      "Name": "Prophecies"
+    },
     "Completed": false
   },
   {
@@ -354,6 +504,9 @@
     "Uri": "https://wiki.guildwars.com/wiki/The_Last_Day_Dawns",
     "Primary": false,
     "Profession": 0,
+    "Campaign": {
+      "Name": "Prophecies"
+    },
     "Completed": false
   },
   {
@@ -361,6 +514,9 @@
     "Uri": "https://wiki.guildwars.com/wiki/The_Last_Day_Dawns_(Hard_mode)",
     "Primary": false,
     "Profession": 0,
+    "Campaign": {
+      "Name": "Prophecies"
+    },
     "Completed": false
   },
   {
@@ -368,6 +524,9 @@
     "Uri": "https://wiki.guildwars.com/wiki/The_Red-Cloaked_Deserter",
     "Primary": false,
     "Profession": 0,
+    "Campaign": {
+      "Name": "Prophecies"
+    },
     "Completed": false
   },
   {
@@ -375,6 +534,9 @@
     "Uri": "https://wiki.guildwars.com/wiki/The_Siege_of_Piken_Square",
     "Primary": false,
     "Profession": 0,
+    "Campaign": {
+      "Name": "Prophecies"
+    },
     "Completed": false
   },
   {
@@ -382,6 +544,9 @@
     "Uri": "https://wiki.guildwars.com/wiki/The_Stolen_Artifact",
     "Primary": false,
     "Profession": 3,
+    "Campaign": {
+      "Name": "Prophecies"
+    },
     "Completed": false
   },
   {
@@ -389,6 +554,9 @@
     "Uri": "https://wiki.guildwars.com/wiki/The_Titan_Source",
     "Primary": false,
     "Profession": 0,
+    "Campaign": {
+      "Name": "Prophecies"
+    },
     "Completed": false
   },
   {
@@ -396,6 +564,9 @@
     "Uri": "https://wiki.guildwars.com/wiki/The_Titan_Source_(Hard_mode)",
     "Primary": false,
     "Profession": 0,
+    "Campaign": {
+      "Name": "Prophecies"
+    },
     "Completed": false
   },
   {
@@ -403,6 +574,9 @@
     "Uri": "https://wiki.guildwars.com/wiki/The_Troublesome_Artifact",
     "Primary": false,
     "Profession": 0,
+    "Campaign": {
+      "Name": "Prophecies"
+    },
     "Completed": false
   },
   {
@@ -410,6 +584,9 @@
     "Uri": "https://wiki.guildwars.com/wiki/The_Way_of_the_Geomancer",
     "Primary": false,
     "Profession": 5,
+    "Campaign": {
+      "Name": "Prophecies"
+    },
     "Completed": false
   },
   {
@@ -417,6 +594,9 @@
     "Uri": "https://wiki.guildwars.com/wiki/Trying_Times",
     "Primary": false,
     "Profession": 6,
+    "Campaign": {
+      "Name": "Prophecies"
+    },
     "Completed": false
   },
   {
@@ -424,6 +604,9 @@
     "Uri": "https://wiki.guildwars.com/wiki/Unnatural_Creatures",
     "Primary": false,
     "Profession": 6,
+    "Campaign": {
+      "Name": "Prophecies"
+    },
     "Completed": false
   },
   {
@@ -431,6 +614,9 @@
     "Uri": "https://wiki.guildwars.com/wiki/Vanguard_Equipment",
     "Primary": false,
     "Profession": 0,
+    "Campaign": {
+      "Name": "Prophecies"
+    },
     "Completed": false
   }
 ]

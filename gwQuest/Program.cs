@@ -1,4 +1,6 @@
-﻿using gwQuest.Repository;
+﻿using gwQuest.Domain;
+using gwQuest.Repository;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +19,7 @@ namespace gwQuest
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1(new QuestRepository("quests.json")));
+            Application.Run(new Form1(new QuestRepository("quests.json"), new SettingsRepository("settings.json")));
         }
     }
 }

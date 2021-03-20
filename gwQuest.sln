@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29411.108
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gwQuest", "gwQuest\gwQuest.csproj", "{2085D575-5F0B-4823-9187-66F98C920A48}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "gwQuest", "gwQuest\gwQuest.csproj", "{2085D575-5F0B-4823-9187-66F98C920A48}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dataLoad", "dataLoad\dataLoad.csproj", "{36AA6F14-B1F3-4057-B885-41C8D07D217E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dataLoad", "dataLoad\dataLoad.csproj", "{36AA6F14-B1F3-4057-B885-41C8D07D217E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

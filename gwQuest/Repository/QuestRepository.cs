@@ -3,6 +3,7 @@ using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Reflection;
 
 namespace gwQuest.Repository
@@ -55,7 +56,8 @@ namespace gwQuest.Repository
 
         public void Save()
         {
-            string text = JsonConvert.SerializeObject(_quests, Formatting.Indented);
+            var questsToSave = _quests.OrderBy(q => q.Campaign).ThenBy(q => q.Region).ThenBy(q => q.Name);
+            string text = JsonConvert.SerializeObject(questsToSave, Formatting.Indented);
             File.WriteAllText(_filePath, text);
         }
 

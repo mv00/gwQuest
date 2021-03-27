@@ -1,12 +1,9 @@
 ﻿using gwQuest.Domain;
 using gwQuest.Repository;
-using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Diagnostics;
 using System.Drawing;
-using System.IO;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -15,23 +12,21 @@ namespace gwQuest
     public partial class Form1 : Form
     {
         private readonly List<Profession> _professions;
-        private readonly IQuestRepository _repository;
+        private readonly IQuestService _questService;
         private readonly ISettingsRepository _settingsRepository;
 
         private Quest _activeQuest;
-        private IEnumerable<Quest> Quests => _repository.GetQuests();
         private Campaign _activeCampaign;
         private Domain.Region _activeRegion;
 
-        public Form1(IQuestRepository questRepository, ISettingsRepository settingsRepository)
+        public Form1(IQuestService questService, ISettingsRepository settingsRepository)
         {
-            _repository = questRepository;
-
+            _questService = questService;
             _settingsRepository = settingsRepository;
             _professions = _settingsRepository.GetProfessions().ToList();
 
             InitializeComponent();
-            SetupContainers();
+            SetupContainers();            
         }
 
         private void SetupContainers()
@@ -54,7 +49,7 @@ namespace gwQuest
             imageList.Images.Add("mesmer", Resources.Resources.Mesmer_tango_icon_20);
 
             listView1.SmallImageList = imageList;
-            ColumnHeader header = new ColumnHeader
+            ColumnHeader header = new()
             {
                 Text = "",
                 Name = "col1",
@@ -100,7 +95,7 @@ namespace gwQuest
             var currentCampaign = ((string) comboBoxCampaign.SelectedItem).ToCampaign();
             var currentRegion = ((string) comboBoxRegion.SelectedItem).ToRegion();
 
-            IEnumerable<Quest> questsToShow = Quests.Where(p => p.Campaign == currentCampaign && p.Region == currentRegion );
+            IEnumerable<Quest> questsToShow = _questService.GetQuests(currentCampaign, currentRegion);
 
             if (!checkBoxShowCompleted.Checked)
                 questsToShow = questsToShow.Where(q => !q.Completed);
@@ -108,12 +103,12 @@ namespace gwQuest
             
             foreach (var quest in questsToShow.OrderBy(q => q.Name))
             {
-                ListViewItem listItem = new ListViewItem {};
+                ListViewItem listItem = new() { };
                 var questName = quest.Name;
 
                 if (checkBoxShowCompleted.Checked && quest.Completed)
                 {
-                    questName = questName + " (Completed)";
+                    questName += " (Completed)";
                     listItem.ForeColor = Color.Green;
                 }
                     
@@ -160,8 +155,34 @@ namespace gwQuest
                 listView1.Items[index].Selected = true;
 
             listView1.Select();
+            UpdateStatistics();
         }
-        
+
+        private void UpdateStatistics()
+        {
+
+            var region = ((string)comboBoxRegion.SelectedItem).ToRegion();
+            var regCompleted = (double)_questService.CompletedQuests(region);
+            var regAvailable = (double)_questService.AvailableQuests(region);
+            if (regAvailable == 0)
+                labelCampaignCount.Text = "N/A";
+            else
+                labelRegionCount.Text = $"{regCompleted}/{regAvailable} ({(int)(regCompleted / regAvailable * 100)}%)";
+
+
+            var campaign = ((string)comboBoxCampaign.SelectedItem).ToCampaign();
+            var campaignCompleted = (double)_questService.CompletedQuests(campaign);
+            var campaignAvailable = (double)_questService.AvailableQuests(campaign);
+            if (campaignAvailable == 0)
+                labelCampaignCount.Text = "N/A";
+            else
+                labelCampaignCount.Text = $"{campaignCompleted}/{campaignAvailable} ({(int)(campaignCompleted / campaignAvailable * 100)}%)";
+
+            var completed = (double)_questService.CompletedQuests();
+            var available = (double)_questService.AvailableQuests();
+            labelTotalCount.Text = $"{completed}/{available} ({(int)(completed / available * 100)}%)";
+        }
+
         #region events
         private void ActiveQuestChanged(object sender, EventArgs e)
         {
@@ -199,21 +220,21 @@ namespace gwQuest
             labelQuestName.Text = _activeQuest.Name;
         }
 
-        private void linkLabelQuest_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void LinkLabelQuest_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             var url = _activeQuest.Uri.ToString().Replace("&", "^&");
             Process.Start(new ProcessStartInfo("cmd", $"/c start {url}") { CreateNoWindow = true });
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
             _activeQuest.Completed = true;
-            _repository.Update(_activeQuest);
+            _questService.Update(_activeQuest);
 
             RefreshQuestList();
         }
 
-        private void comboBoxProfessionMain_SelectedIndexChanged(object sender, EventArgs e)
+        private void ComboBoxProfessionMain_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (_professions[0] == (Profession)comboBoxProfessionMain.SelectedItem)
                 return;
@@ -223,7 +244,7 @@ namespace gwQuest
             RefreshQuestList();
         }
 
-        private void comboBoxProfessionSecondary_SelectedIndexChanged(object sender, EventArgs e)
+        private void ComboBoxProfessionSecondary_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (_professions[1] == (Profession)comboBoxProfessionSecondary.SelectedItem)
                 return;
@@ -233,12 +254,12 @@ namespace gwQuest
             RefreshQuestList();
         }
 
-        private void checkBoxShowCompleted_CheckedChanged(object sender, EventArgs e)
+        private void CheckBoxShowCompleted_CheckedChanged(object sender, EventArgs e)
         {
             RefreshQuestList();
         }
 
-        private void comboBoxCampaign_SelectedIndexChanged(object sender, System.EventArgs e)
+        private void ComboBoxCampaign_SelectedIndexChanged(object sender, System.EventArgs e)
         {
             var newCampaign = ((string)comboBoxCampaign.SelectedItem).ToCampaign();
             if (_activeCampaign == 0)
@@ -253,10 +274,18 @@ namespace gwQuest
             }
 
             _activeCampaign = newCampaign;
+
+            var regions = _activeCampaign.GetRegions();
+
+            if (!regions.Contains(_activeRegion.ToReadableString()))
+            {
+                comboBoxRegion.DataSource = ((string)comboBoxCampaign.SelectedItem).ToCampaign().GetRegions();
+            }               
+
             RefreshQuestList();
         }
 
-        private void comboBoxRegion_SelectedIndexChanged(object sender, EventArgs e)
+        private void ComboBoxRegion_SelectedIndexChanged(object sender, EventArgs e)
         {
             var newRegion = ((string)comboBoxRegion.SelectedItem).ToRegion();
             if(_activeRegion == 0)

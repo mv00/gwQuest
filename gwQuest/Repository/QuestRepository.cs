@@ -11,15 +11,14 @@ namespace gwQuest.Repository
     public interface IQuestRepository
     {
         void Update(Quest quest);
-        void Load();      
-        void Save();
-        IEnumerable<Quest> GetQuests();
+        IEnumerable<Quest> GetQuests(Func<Quest, bool> filter = null);
 
     }
+
     public class QuestRepository : IQuestRepository
     {
-        private string _filePath;
-        private List<Quest> _quests;
+        private readonly string _filePath;
+        private HashSet<Quest> _quests;
 
         public QuestRepository(string filePath)
         {
@@ -30,43 +29,46 @@ namespace gwQuest.Repository
             }
         }
 
-        public IEnumerable<Quest> GetQuests()
+        public IEnumerable<Quest> GetQuests(Func<Quest, bool> filter = null)
         {
             if (_quests == null)
                 Load();
 
-            return _quests;
+            return _quests.Where(filter ?? (p => true));
+        }
+        
+
+
+        public void Update(Quest quest)
+        {
+            _quests.RemoveWhere(q => q.Name == quest.Name);
+            _quests.Add(quest);
+
+            Save();
         }
 
-        public void Load()
+        private void Load()
         {
             if (!File.Exists(Path.Combine(Environment.CurrentDirectory, _filePath)))
             {
                 using Stream stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("gwQuest.Repository.quests.json");
-                using StreamReader reader = new StreamReader(stream);
+                using StreamReader reader = new(stream);
                 string result = reader.ReadToEnd();
-                _quests = JsonConvert.DeserializeObject<List<Quest>>(result);
+                _quests = JsonConvert.DeserializeObject<HashSet<Quest>>(result);
 
                 return;
             }
 
             string text = File.ReadAllText(_filePath);
-            _quests = JsonConvert.DeserializeObject<List<Quest>>(text);
+            _quests = JsonConvert.DeserializeObject<HashSet<Quest>>(text);
+
         }
 
-        public void Save()
+        private void Save()
         {
             var questsToSave = _quests.OrderBy(q => q.Campaign).ThenBy(q => q.Region).ThenBy(q => q.Name);
             string text = JsonConvert.SerializeObject(questsToSave, Formatting.Indented);
             File.WriteAllText(_filePath, text);
-        }
-
-        public void Update(Quest quest)
-        {
-            _quests.Remove(_quests.Find(q => q.Name == quest.Name));
-            _quests.Add(quest);
-
-            Save();
         }
     }
 }

@@ -9,5 +9,7 @@
         CrystalDesert = 5,
         SouthernShiverpeaks = 6,
         RingOfFireIslands = 7,
+
+        ShingJea = 8,
     }
 }

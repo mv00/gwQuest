@@ -45,8 +45,15 @@ namespace gwQuest
             this.labelPrimaryImage = new System.Windows.Forms.Label();
             this.listView1 = new System.Windows.Forms.ListView();
             this.button1 = new System.Windows.Forms.Button();
-            this.labelZone = new System.Windows.Forms.Label();
+            this.labelRegion = new System.Windows.Forms.Label();
             this.comboBoxRegion = new System.Windows.Forms.ComboBox();
+            this.labelStatistics = new System.Windows.Forms.Label();
+            this.labelStatRegion = new System.Windows.Forms.Label();
+            this.labelStatCampaign = new System.Windows.Forms.Label();
+            this.labeTotal = new System.Windows.Forms.Label();
+            this.labelRegionCount = new System.Windows.Forms.Label();
+            this.labelCampaignCount = new System.Windows.Forms.Label();
+            this.labelTotalCount = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblCampaign
@@ -78,7 +85,7 @@ namespace gwQuest
             this.comboBoxProfessionMain.Name = "comboBoxProfessionMain";
             this.comboBoxProfessionMain.Size = new System.Drawing.Size(140, 23);
             this.comboBoxProfessionMain.TabIndex = 3;
-            this.comboBoxProfessionMain.SelectedIndexChanged += new System.EventHandler(this.comboBoxProfessionMain_SelectedIndexChanged);
+            this.comboBoxProfessionMain.SelectedIndexChanged += new System.EventHandler(this.ComboBoxProfessionMain_SelectedIndexChanged);
             // 
             // comboBoxCampaign
             // 
@@ -89,7 +96,7 @@ namespace gwQuest
             this.comboBoxCampaign.Name = "comboBoxCampaign";
             this.comboBoxCampaign.Size = new System.Drawing.Size(140, 23);
             this.comboBoxCampaign.TabIndex = 1;
-            this.comboBoxCampaign.SelectedIndexChanged += new System.EventHandler(this.comboBoxCampaign_SelectedIndexChanged);
+            this.comboBoxCampaign.SelectedIndexChanged += new System.EventHandler(this.ComboBoxCampaign_SelectedIndexChanged);
             // 
             // comboBoxProfessionSecondary
             // 
@@ -100,7 +107,7 @@ namespace gwQuest
             this.comboBoxProfessionSecondary.Name = "comboBoxProfessionSecondary";
             this.comboBoxProfessionSecondary.Size = new System.Drawing.Size(140, 23);
             this.comboBoxProfessionSecondary.TabIndex = 5;
-            this.comboBoxProfessionSecondary.SelectedIndexChanged += new System.EventHandler(this.comboBoxProfessionSecondary_SelectedIndexChanged);
+            this.comboBoxProfessionSecondary.SelectedIndexChanged += new System.EventHandler(this.ComboBoxProfessionSecondary_SelectedIndexChanged);
             // 
             // checkBoxShowCompleted
             // 
@@ -111,7 +118,7 @@ namespace gwQuest
             this.checkBoxShowCompleted.TabIndex = 6;
             this.checkBoxShowCompleted.Text = "Show completed quests";
             this.checkBoxShowCompleted.UseVisualStyleBackColor = true;
-            this.checkBoxShowCompleted.CheckedChanged += new System.EventHandler(this.checkBoxShowCompleted_CheckedChanged);
+            this.checkBoxShowCompleted.CheckedChanged += new System.EventHandler(this.CheckBoxShowCompleted_CheckedChanged);
             // 
             // labelQuestDetails
             // 
@@ -138,7 +145,7 @@ namespace gwQuest
             this.linkLabelQuest.TabStop = true;
             this.linkLabelQuest.Text = "Open in Wiki";
             this.linkLabelQuest.Visible = false;
-            this.linkLabelQuest.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelQuest_LinkClicked);
+            this.linkLabelQuest.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkLabelQuest_LinkClicked);
             // 
             // labelPrimary
             // 
@@ -204,16 +211,16 @@ namespace gwQuest
             this.button1.Text = "Completed";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Visible = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // labelZone
             // 
-            this.labelZone.AutoSize = true;
-            this.labelZone.Location = new System.Drawing.Point(449, 309);
-            this.labelZone.Name = "labelZone";
-            this.labelZone.Size = new System.Drawing.Size(34, 15);
-            this.labelZone.TabIndex = 11;
-            this.labelZone.Text = "Zone";
+            this.labelRegion.AutoSize = true;
+            this.labelRegion.Location = new System.Drawing.Point(449, 309);
+            this.labelRegion.Name = "labelZone";
+            this.labelRegion.Size = new System.Drawing.Size(34, 15);
+            this.labelRegion.TabIndex = 11;
+            this.labelRegion.Text = "Zone";
             // 
             // comboBoxRegion
             // 
@@ -222,15 +229,89 @@ namespace gwQuest
             this.comboBoxRegion.Name = "comboBoxRegion";
             this.comboBoxRegion.Size = new System.Drawing.Size(140, 23);
             this.comboBoxRegion.TabIndex = 12;
-            this.comboBoxRegion.SelectedIndexChanged += new System.EventHandler(this.comboBoxRegion_SelectedIndexChanged);
+            this.comboBoxRegion.SelectedIndexChanged += new System.EventHandler(this.ComboBoxRegion_SelectedIndexChanged);
+            // 
+            // labelStatistics
+            // 
+            this.labelStatistics.AutoSize = true;
+            this.labelStatistics.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelStatistics.Location = new System.Drawing.Point(449, 560);
+            this.labelStatistics.Name = "labelStatistics";
+            this.labelStatistics.Size = new System.Drawing.Size(84, 25);
+            this.labelStatistics.TabIndex = 13;
+            this.labelStatistics.Text = "Statistics";
+            // 
+            // labelRegion
+            // 
+            this.labelStatRegion.AutoSize = true;
+            this.labelStatRegion.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelStatRegion.Location = new System.Drawing.Point(449, 585);
+            this.labelStatRegion.Name = "labelRegion";
+            this.labelStatRegion.Size = new System.Drawing.Size(52, 17);
+            this.labelStatRegion.TabIndex = 14;
+            this.labelStatRegion.Text = "Region:";
+            // 
+            // labelCampaign
+            // 
+            this.labelStatCampaign.AutoSize = true;
+            this.labelStatCampaign.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelStatCampaign.Location = new System.Drawing.Point(449, 602);
+            this.labelStatCampaign.Name = "labelCampaign";
+            this.labelStatCampaign.Size = new System.Drawing.Size(70, 17);
+            this.labelStatCampaign.TabIndex = 15;
+            this.labelStatCampaign.Text = "Campaign:";
+            // 
+            // labeTotal
+            // 
+            this.labeTotal.AutoSize = true;
+            this.labeTotal.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labeTotal.Location = new System.Drawing.Point(449, 619);
+            this.labeTotal.Name = "labeTotal";
+            this.labeTotal.Size = new System.Drawing.Size(39, 17);
+            this.labeTotal.TabIndex = 16;
+            this.labeTotal.Text = "Total:";
+            // 
+            // labelRegionCount
+            // 
+            this.labelRegionCount.AutoSize = true;
+            this.labelRegionCount.Location = new System.Drawing.Point(540, 587);
+            this.labelRegionCount.Name = "labelRegionCount";
+            this.labelRegionCount.Size = new System.Drawing.Size(38, 15);
+            this.labelRegionCount.TabIndex = 17;
+            this.labelRegionCount.Text = "label4";
+            // 
+            // labelCampaignCount
+            // 
+            this.labelCampaignCount.AutoSize = true;
+            this.labelCampaignCount.Location = new System.Drawing.Point(540, 604);
+            this.labelCampaignCount.Name = "labelCampaignCount";
+            this.labelCampaignCount.Size = new System.Drawing.Size(38, 15);
+            this.labelCampaignCount.TabIndex = 18;
+            this.labelCampaignCount.Text = "label5";
+            // 
+            // labelTotalCount
+            // 
+            this.labelTotalCount.AutoSize = true;
+            this.labelTotalCount.Location = new System.Drawing.Point(540, 622);
+            this.labelTotalCount.Name = "labelTotalCount";
+            this.labelTotalCount.Size = new System.Drawing.Size(38, 15);
+            this.labelTotalCount.TabIndex = 19;
+            this.labelTotalCount.Text = "label6";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(748, 691);
+            this.Controls.Add(this.labelTotalCount);
+            this.Controls.Add(this.labelCampaignCount);
+            this.Controls.Add(this.labelRegionCount);
+            this.Controls.Add(this.labeTotal);
+            this.Controls.Add(this.labelStatCampaign);
+            this.Controls.Add(this.labelStatRegion);
+            this.Controls.Add(this.labelStatistics);
             this.Controls.Add(this.comboBoxRegion);
-            this.Controls.Add(this.labelZone);
+            this.Controls.Add(this.labelRegion);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.checkBoxShowCompleted);
             this.Controls.Add(this.labelPrimaryImage);
@@ -254,8 +335,6 @@ namespace gwQuest
         }
 
         #endregion
-        private System.Windows.Forms.TabPage tabPageAscalon;
-        private System.Windows.Forms.TabPage tabPageNorthernShiverpeaks;
         private System.Windows.Forms.ComboBox comboBoxCampaign;
         private System.Windows.Forms.Label lblCampaign;
         private System.Windows.Forms.Label labelProfessionMain;
@@ -269,8 +348,15 @@ namespace gwQuest
         private System.Windows.Forms.Label labelPrimaryImage;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label labelZone;
+        private System.Windows.Forms.Label labelRegion;
         private System.Windows.Forms.ComboBox comboBoxRegion;
+        private System.Windows.Forms.Label labelStatistics;
+        private System.Windows.Forms.Label labelStatRegion;
+        private System.Windows.Forms.Label labelStatCampaign;
+        private System.Windows.Forms.Label labeTotal;
+        private System.Windows.Forms.Label labelRegionCount;
+        private System.Windows.Forms.Label labelCampaignCount;
+        private System.Windows.Forms.Label labelTotalCount;
     }
 }
 

@@ -43,14 +43,14 @@ namespace gwQuest.Repository
                 if (!File.Exists(Path.Combine(Environment.CurrentDirectory, _filePath)))
                 {
                     using Stream stream = Assembly.GetEntryAssembly().GetManifestResourceStream("gwQuest.Repository.settings.json");
-                    using StreamReader reader = new StreamReader(stream);
+                    using StreamReader reader = new(stream);
                     string result = reader.ReadToEnd();
                     _professions = JsonConvert.DeserializeObject<List<Profession>>(result);
 
                     return;
                 }
             }
-            catch (System.Exception e)
+            catch (System.Exception)
             {
                 var message = $"Environment.CurrentDirectory: {Environment.CurrentDirectory}";
                 throw new System.Exception(message);

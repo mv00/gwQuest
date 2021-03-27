@@ -17,7 +17,7 @@ namespace dataLoad
 
             XmlNodeList quests = xml.GetElementsByTagName("tr");
 
-            List<Quest> questList = new List<Quest>();
+            List<Quest> questList = new();
 
             foreach(XmlNode quest in quests)
             {

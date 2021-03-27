@@ -6,26 +6,34 @@ namespace gwQuest.Domain
 {
     public static class CampaignExtensions
     {
-        private static IEnumerable<string> pRegions;
+        private static IEnumerable<string> propheciesRegions;
+        private static IEnumerable<string> canthanRegions;
 
         public static IEnumerable<string> GetRegions(this Campaign campaign)
         {
-            if(pRegions == null)
-                pRegions = Enum.GetValues(typeof(Region)).Cast<Region>().Select(r => r.ToReadableString()).ToList();
-
-            switch (campaign)
+            if(propheciesRegions == null)
             {
-                case Campaign.Prophecies:
-                    return pRegions;
-                case Campaign.Cantha:
-                    throw new KeyNotFoundException();
-                case Campaign.Nightfall:
-                    throw new KeyNotFoundException();
-                case Campaign.EyeOfTheNorth:
-                    throw new KeyNotFoundException();
-                default:
-                    throw new KeyNotFoundException();
+                propheciesRegions = Enum.GetValues(typeof(Region))
+                    .Cast<Region>()
+                    .Where(reg => (int)reg < (int)Region.ShingJea)
+                    .Select(r => r.ToReadableString()).ToList();
             }
+            if(canthanRegions == null)
+            {
+                canthanRegions = Enum.GetValues(typeof(Region))
+                    .Cast<Region>()
+                    .Where(reg => (int)reg >= (int)Region.ShingJea)
+                    .Select(r => r.ToReadableString()).ToList();
+            }
+
+            return campaign switch
+            {
+                Campaign.Prophecies => propheciesRegions,
+                Campaign.Cantha => canthanRegions,
+                Campaign.Nightfall => throw new KeyNotFoundException(),
+                Campaign.EyeOfTheNorth => throw new KeyNotFoundException(),
+                _ => throw new KeyNotFoundException(),
+            };
         }
 
         public static Campaign ToCampaign(this string @object)
@@ -43,19 +51,14 @@ namespace gwQuest.Domain
 
         public static string ToCapitalString(this Campaign campaign)
         {
-            switch (campaign)
+            return campaign switch
             {
-                case Campaign.Prophecies:
-                    return "Prophecies";
-                case Campaign.Cantha:
-                    return "Cantha";
-                case Campaign.Nightfall:
-                    return "Nightfall";
-                case Campaign.EyeOfTheNorth:
-                    return "Eye of the North";
-                default:
-                    throw new KeyNotFoundException();
-            }
+                Campaign.Prophecies => "Prophecies",
+                Campaign.Cantha => "Cantha",
+                Campaign.Nightfall => "Nightfall",
+                Campaign.EyeOfTheNorth => "Eye of the North",
+                _ => throw new KeyNotFoundException(),
+            };
         }
     }
 }

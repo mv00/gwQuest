@@ -1,7 +1,4 @@
-﻿using gwQuest.Common;
-using gwQuest.Domain;
-
-namespace gwQuest
+﻿namespace gwQuest
 {
     partial class Form1
     {

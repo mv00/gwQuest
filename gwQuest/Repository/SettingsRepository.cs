@@ -54,7 +54,7 @@ namespace gwQuest.Repository
                 _settings = JsonConvert.DeserializeObject<Settings>(text);
             }
 
-            catch(JsonSerializationException)
+            catch (JsonSerializationException)
             {
                 List<Profession> list = JsonConvert.DeserializeObject<List<Profession>>(text);
                 _settings = new Settings { Campaign = Campaign.Prophecies, Region = Region.Ascalon, Professions = new Profession[] { list[0], list[1] } };

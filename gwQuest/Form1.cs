@@ -24,7 +24,7 @@ namespace gwQuest
             _settings = _settingsRepository.GetSettings();
 
             InitializeComponent();
-            SetupContainers();            
+            SetupContainers();
         }
 
         private void SetupContainers()
@@ -71,7 +71,7 @@ namespace gwQuest
             comboBoxProfessionMain.Items.Add(Profession.Elementalist);
             comboBoxProfessionMain.Items.Add(Profession.Mesmer);
 
-            comboBoxProfessionMain.SelectedIndex = (int) _settings.Professions.First();
+            comboBoxProfessionMain.SelectedIndex = (int)_settings.Professions.First();
 
             //secondary profession
             comboBoxProfessionSecondary.Items.Add(Profession.None);
@@ -81,7 +81,7 @@ namespace gwQuest
             comboBoxProfessionSecondary.Items.Add(Profession.Ranger);
             comboBoxProfessionSecondary.Items.Add(Profession.Elementalist);
             comboBoxProfessionSecondary.Items.Add(Profession.Mesmer);
-           
+
             comboBoxProfessionSecondary.SelectedIndex = (int)_settings.Professions.Skip(1).First();
 
             RefreshQuestList();
@@ -95,15 +95,15 @@ namespace gwQuest
             listView1.Items.Clear();
 
             var filterQuests = _settings.Professions[0] != Profession.None && _settings.Professions[1] != Profession.None;
-            var currentCampaign = ((string) comboBoxCampaign.SelectedItem).ToCampaign();
-            var currentRegion = ((string) comboBoxRegion.SelectedItem).ToRegion();
+            var currentCampaign = ((string)comboBoxCampaign.SelectedItem).ToCampaign();
+            var currentRegion = ((string)comboBoxRegion.SelectedItem).ToRegion();
 
             IEnumerable<Quest> questsToShow = _questService.GetQuests(currentCampaign, currentRegion);
 
             if (!checkBoxShowCompleted.Checked)
                 questsToShow = questsToShow.Where(q => !q.Completed);
 
-            
+
             foreach (var quest in questsToShow.OrderBy(q => q.Name))
             {
                 ListViewItem listItem = new() { };
@@ -114,7 +114,7 @@ namespace gwQuest
                     questName += " (Completed)";
                     listItem.ForeColor = Color.Green;
                 }
-                    
+
 
                 var displayProfQuest = quest.Profession == _settings.Professions[0] || quest.Profession == _settings.Professions[1];
 
@@ -151,7 +151,7 @@ namespace gwQuest
                 listView1.Alignment = ListViewAlignment.SnapToGrid;
                 listView1.HideSelection = false;
                 listView1.AutoArrange = true;
-                listView1.Items.Add(listItem);               
+                listView1.Items.Add(listItem);
             }
 
             if (listView1.Items.Count > 0)
@@ -297,7 +297,7 @@ namespace gwQuest
         private void ComboBoxRegion_SelectedIndexChanged(object sender, EventArgs e)
         {
             var newRegion = ((string)comboBoxRegion.SelectedItem).ToRegion();
-            if(_settings.Region == 0)
+            if (_settings.Region == 0)
             {
                 _settings.Region = newRegion;
                 return;

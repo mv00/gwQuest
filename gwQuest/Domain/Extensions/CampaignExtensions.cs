@@ -21,9 +21,9 @@ namespace gwQuest.Domain
                 propheciesRegions = regions.Where(reg => (int)reg < (int)Region.ShingJeaIsland)
                                            .Select(r => r.ToReadableString()).ToList();
             }
-            if(canthanRegions == null)
+            if (canthanRegions == null)
             {
-                canthanRegions = regions.Where(reg => (int)reg >= (int)Region.ShingJeaIsland && (int)reg <= (int) Region.TheJadeSea)
+                canthanRegions = regions.Where(reg => (int)reg >= (int)Region.ShingJeaIsland && (int)reg <= (int)Region.TheJadeSea)
                                         .Select(r => r.ToReadableString()).ToList();
             }
             if (nfRegions == null)
@@ -36,7 +36,7 @@ namespace gwQuest.Domain
                 eotnRegions = regions.Where(reg => (int)reg >= (int)Region.CharrHomelands && (int)reg <= (int)Region.TarnishedCost)
                                    .Select(r => r.ToReadableString()).ToList();
             }
-            if(beyond == null)
+            if (beyond == null)
             {
                 beyond = regions.Where(reg => (int)reg >= (int)Region.ZinnsTask && (int)reg <= (int)Region.WindsOfChange)
                                    .Select(r => r.ToReadableString()).ToList();
@@ -55,13 +55,13 @@ namespace gwQuest.Domain
 
         public static Campaign ToCampaign(this string @object)
         {
-            return (Campaign) Enum.Parse(typeof(Campaign), @object.Replace(" ", ""), ignoreCase: true);
+            return (Campaign)Enum.Parse(typeof(Campaign), @object.Replace(" ", ""), ignoreCase: true);
         }
 
         public static IEnumerable<string> GetCampaigns()
         {
-           return new string[] { Campaign.Prophecies.ToCapitalString(), 
-                Campaign.Cantha.ToCapitalString(), 
+            return new string[] { Campaign.Prophecies.ToCapitalString(),
+                Campaign.Cantha.ToCapitalString(),
                 Campaign.Nightfall.ToCapitalString(),
                 Campaign.EyeOfTheNorth.ToCapitalString(),
                 Campaign.Beyond.ToCapitalString()};

@@ -16,7 +16,7 @@
         TheJadeSea = 11,
 
         Istan = 12,
-        Kourna = 13, 
+        Kourna = 13,
         Vabbi = 14,
         TheDesolation = 15,
         RealmOfTorment = 16,

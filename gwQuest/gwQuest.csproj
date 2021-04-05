@@ -6,9 +6,10 @@
     <UseWindowsForms>true</UseWindowsForms>
     <AssemblyTitle>gwQuest</AssemblyTitle>
     <Product>gwQuest</Product>
-    <Copyright>Copyright ©  2021</Copyright>
     <OutputPath>bin\$(Configuration)\</OutputPath>
     <ApplicationIcon>image.ico</ApplicationIcon>
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+    <NeutralLanguage>en</NeutralLanguage>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugType>full</DebugType>

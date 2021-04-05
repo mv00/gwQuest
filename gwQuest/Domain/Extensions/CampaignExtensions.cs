@@ -10,6 +10,7 @@ namespace gwQuest.Domain
         private static IEnumerable<string> canthanRegions;
         private static IEnumerable<string> nfRegions;
         private static IEnumerable<string> eotnRegions;
+        private static IEnumerable<string> beyond;
 
         public static IEnumerable<string> GetRegions(this Campaign campaign)
         {
@@ -32,7 +33,13 @@ namespace gwQuest.Domain
             }
             if (eotnRegions == null)
             {
-                eotnRegions = new List<string>();
+                eotnRegions = regions.Where(reg => (int)reg >= (int)Region.CharrHomelands && (int)reg <= (int)Region.TarnishedCost)
+                                   .Select(r => r.ToReadableString()).ToList();
+            }
+            if(beyond == null)
+            {
+                beyond = regions.Where(reg => (int)reg >= (int)Region.ZinnsTask && (int)reg <= (int)Region.WindsOfChange)
+                                   .Select(r => r.ToReadableString()).ToList();
             }
 
             return campaign switch
@@ -41,6 +48,7 @@ namespace gwQuest.Domain
                 Campaign.Cantha => canthanRegions,
                 Campaign.Nightfall => nfRegions,
                 Campaign.EyeOfTheNorth => eotnRegions,
+                Campaign.Beyond => beyond,
                 _ => throw new KeyNotFoundException(),
             };
         }
@@ -55,7 +63,8 @@ namespace gwQuest.Domain
            return new string[] { Campaign.Prophecies.ToCapitalString(), 
                 Campaign.Cantha.ToCapitalString(), 
                 Campaign.Nightfall.ToCapitalString(),
-                Campaign.EyeOfTheNorth.ToCapitalString() };
+                Campaign.EyeOfTheNorth.ToCapitalString(),
+                Campaign.Beyond.ToCapitalString()};
         }
 
         public static string ToCapitalString(this Campaign campaign)
@@ -66,6 +75,7 @@ namespace gwQuest.Domain
                 Campaign.Cantha => "Cantha",
                 Campaign.Nightfall => "Nightfall",
                 Campaign.EyeOfTheNorth => "Eye of the North",
+                Campaign.Beyond => "Beyond",
                 _ => throw new KeyNotFoundException(),
             };
         }

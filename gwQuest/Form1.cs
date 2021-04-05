@@ -155,7 +155,16 @@ namespace gwQuest
             }
 
             if (listView1.Items.Count > 0)
-                listView1.Items[index].Selected = true;
+            {
+                if (listView1.Items.Count >= index)
+                {
+                    listView1.Items[index].Selected = true;
+                }
+                else
+                {
+                    listView1.Items[0].Selected = true;
+                }
+            }
 
             listView1.Select();
             UpdateStatistics();

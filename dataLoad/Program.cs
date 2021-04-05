@@ -11,7 +11,7 @@ namespace dataLoad
     {
         static void Main(string[] args)
         {
-            var doc = File.ReadAllText(@"C:\Users\Matte\Downloads\domain.html");          
+            var doc = File.ReadAllText(@"C:\Users\Matte\Downloads\windsofchange.html");          
             doc = doc.Replace("<br>", "");
             doc = doc.Replace("&nbsp;", "");
             doc = doc.Replace("height=\"19\">", "height=\"19\"/>");
@@ -41,7 +41,10 @@ namespace dataLoad
                 var profession = questInfo[2]?.FirstChild?.FirstChild?.Value;
                 var professionToAdd = profession.IsProfession() ? Profession.None : profession.GetProfession();
 
-                var questItem = new Quest(name, uri, primary, professionToAdd, Campaign.Nightfall, Region.DomainOfAnguish, false);
+                if (uri.ToString().EndsWith("_(Hard_mode)"))
+                    name = name + " (Hard mode)";
+
+                var questItem = new Quest(name, uri, primary, professionToAdd, Campaign.Beyond, Region.WindsOfChange, false);
                 questList.Add(questItem);
             }
 

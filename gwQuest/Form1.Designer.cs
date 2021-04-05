@@ -213,14 +213,14 @@ namespace gwQuest
             this.button1.Visible = false;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
-            // labelZone
+            // labelRegion
             // 
             this.labelRegion.AutoSize = true;
             this.labelRegion.Location = new System.Drawing.Point(449, 309);
-            this.labelRegion.Name = "labelZone";
-            this.labelRegion.Size = new System.Drawing.Size(34, 15);
+            this.labelRegion.Name = "labelRegion";
+            this.labelRegion.Size = new System.Drawing.Size(44, 15);
             this.labelRegion.TabIndex = 11;
-            this.labelRegion.Text = "Zone";
+            this.labelRegion.Text = "Region";
             // 
             // comboBoxRegion
             // 
@@ -235,28 +235,28 @@ namespace gwQuest
             // 
             this.labelStatistics.AutoSize = true;
             this.labelStatistics.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelStatistics.Location = new System.Drawing.Point(449, 560);
+            this.labelStatistics.Location = new System.Drawing.Point(445, 560);
             this.labelStatistics.Name = "labelStatistics";
             this.labelStatistics.Size = new System.Drawing.Size(84, 25);
             this.labelStatistics.TabIndex = 13;
             this.labelStatistics.Text = "Statistics";
             // 
-            // labelRegion
+            // labelStatRegion
             // 
             this.labelStatRegion.AutoSize = true;
             this.labelStatRegion.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.labelStatRegion.Location = new System.Drawing.Point(449, 585);
-            this.labelStatRegion.Name = "labelRegion";
+            this.labelStatRegion.Name = "labelStatRegion";
             this.labelStatRegion.Size = new System.Drawing.Size(52, 17);
             this.labelStatRegion.TabIndex = 14;
             this.labelStatRegion.Text = "Region:";
             // 
-            // labelCampaign
+            // labelStatCampaign
             // 
             this.labelStatCampaign.AutoSize = true;
             this.labelStatCampaign.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.labelStatCampaign.Location = new System.Drawing.Point(449, 602);
-            this.labelStatCampaign.Name = "labelCampaign";
+            this.labelStatCampaign.Name = "labelStatCampaign";
             this.labelStatCampaign.Size = new System.Drawing.Size(70, 17);
             this.labelStatCampaign.TabIndex = 15;
             this.labelStatCampaign.Text = "Campaign:";

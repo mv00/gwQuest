@@ -77,6 +77,8 @@ namespace gwQuest.Repository
                 {
                     _quests.Add(quest);
                 }
+
+                Save();
             }
         }
 

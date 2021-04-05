@@ -1,6 +1,4 @@
 ﻿using gwQuest.Repository;
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -18,8 +16,6 @@ namespace gwQuest.Domain
         int AvailableQuests();
         int AvailableQuests(Region region);
         int AvailableQuests(Campaign campaign);
-
-        IEnumerable<Region> GetRegions(Campaign campaign);
     }
 
     public class QuestService : IQuestService
@@ -64,18 +60,6 @@ namespace gwQuest.Domain
         public IEnumerable<Quest> GetQuests(Campaign campaign, Region region)
         {
             return _questRepository.GetQuests().Where(q => q.Campaign == campaign && q.Region == region);
-        }
-
-        public IEnumerable<Region> GetRegions(Campaign campaign)
-        {
-            return campaign switch
-            {
-                Campaign.Prophecies => new HashSet<Region>() { Region.Ascalon, Region.NorthernShiverpeaks, Region.Kryta, Region.MaguumaJungle, Region.CrystalDesert, Region.SouthernShiverpeaks, Region.RingOfFireIslands },
-                Campaign.Cantha => new HashSet<Region>() { Region.ShingJea },
-                Campaign.Nightfall => new HashSet<Region>(),
-                Campaign.EyeOfTheNorth => new HashSet<Region>(),
-                _ => throw new ArgumentException($"Inavlid Campaign {campaign}"),
-            };
         }
 
         public void Update(Quest quest)

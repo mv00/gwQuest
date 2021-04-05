@@ -58,10 +58,26 @@ namespace gwQuest.Repository
 
                 return;
             }
+            else
+            {
+                string text = File.ReadAllText(_filePath);
+                _quests = JsonConvert.DeserializeObject<HashSet<Quest>>(text);
+            }
 
-            string text = File.ReadAllText(_filePath);
-            _quests = JsonConvert.DeserializeObject<HashSet<Quest>>(text);
+            if(_quests.All(q => q.Campaign == Campaign.Prophecies) && _quests.Count == 153)
+            {
+                using Stream stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("gwQuest.Repository.quests.json");
+                using StreamReader reader = new(stream);
+                string result = reader.ReadToEnd();
+                HashSet<Quest> nonProphQuests = JsonConvert.DeserializeObject<HashSet<Quest>>(result)
+                    .Where(q => q.Campaign != Campaign.Prophecies)
+                    .ToHashSet();
 
+                foreach(var quest in nonProphQuests)
+                {
+                    _quests.Add(quest);
+                }
+            }
         }
 
         private void Save()

@@ -3,37 +3,32 @@ using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Reflection;
 
 namespace gwQuest.Repository
 {
     public interface ISettingsRepository
     {
         void Load();
-        void Save(IEnumerable<Profession> professions);
-        IEnumerable<Profession> GetProfessions();
+        void Save(Settings settings);
+        Settings GetSettings();
     }
 
     public class SettingsRepository : ISettingsRepository
     {
-        private readonly string _filePath;
-        private IEnumerable<Profession> _professions;
+        private const string _filePath = "settings.json";
+        private Settings _settings;
 
-        public SettingsRepository(string filePath)
+        public SettingsRepository()
         {
-            if (filePath != null)
-            {
-                _filePath = filePath;
-                Load();
-            }
+            Load();
         }
 
-        public IEnumerable<Profession> GetProfessions()
+        public Settings GetSettings()
         {
-            if (_professions == null)
+            if (_settings == null)
                 Load();
 
-            return _professions;
+            return _settings;
         }
 
         public void Load()
@@ -42,29 +37,35 @@ namespace gwQuest.Repository
             {
                 if (!File.Exists(Path.Combine(Environment.CurrentDirectory, _filePath)))
                 {
-                    using Stream stream = Assembly.GetEntryAssembly().GetManifestResourceStream("gwQuest.Repository.settings.json");
-                    using StreamReader reader = new(stream);
-                    string result = reader.ReadToEnd();
-                    _professions = JsonConvert.DeserializeObject<List<Profession>>(result);
-
+                    _settings = new Settings { Campaign = Campaign.Prophecies, Region = Region.Ascalon, Professions = new Profession[] { 0, 0 } };
                     return;
                 }
             }
-            catch (System.Exception)
+            catch (Exception)
             {
                 var message = $"Environment.CurrentDirectory: {Environment.CurrentDirectory}";
-                throw new System.Exception(message);
+                throw new Exception(message);
             }
 
             string text = File.ReadAllText(_filePath);
-            _professions = JsonConvert.DeserializeObject<List<Profession>>(text);
+
+            try
+            {
+                _settings = JsonConvert.DeserializeObject<Settings>(text);
+            }
+
+            catch(JsonSerializationException)
+            {
+                List<Profession> list = JsonConvert.DeserializeObject<List<Profession>>(text);
+                _settings = new Settings { Campaign = Campaign.Prophecies, Region = Region.Ascalon, Professions = new Profession[] { list[0], list[1] } };
+            }
         }
 
-        public void Save(IEnumerable<Profession> professions)
+        public void Save(Settings settings)
         {
-            _professions = professions;
+            _settings = settings;
 
-            string text = JsonConvert.SerializeObject(_professions, Formatting.Indented);
+            string text = JsonConvert.SerializeObject(_settings, Formatting.Indented);
             File.WriteAllText(_filePath, text);
         }
     }

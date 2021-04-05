@@ -8,30 +8,39 @@ namespace gwQuest.Domain
     {
         private static IEnumerable<string> propheciesRegions;
         private static IEnumerable<string> canthanRegions;
+        private static IEnumerable<string> nfRegions;
+        private static IEnumerable<string> eotnRegions;
 
         public static IEnumerable<string> GetRegions(this Campaign campaign)
         {
-            if(propheciesRegions == null)
+            var regions = Enum.GetValues(typeof(Region)).Cast<Region>();
+
+            if (propheciesRegions == null)
             {
-                propheciesRegions = Enum.GetValues(typeof(Region))
-                    .Cast<Region>()
-                    .Where(reg => (int)reg < (int)Region.ShingJea)
-                    .Select(r => r.ToReadableString()).ToList();
+                propheciesRegions = regions.Where(reg => (int)reg < (int)Region.ShingJeaIsland)
+                                           .Select(r => r.ToReadableString()).ToList();
             }
             if(canthanRegions == null)
             {
-                canthanRegions = Enum.GetValues(typeof(Region))
-                    .Cast<Region>()
-                    .Where(reg => (int)reg >= (int)Region.ShingJea)
-                    .Select(r => r.ToReadableString()).ToList();
+                canthanRegions = regions.Where(reg => (int)reg >= (int)Region.ShingJeaIsland && (int)reg <= (int) Region.TheJadeSea)
+                                        .Select(r => r.ToReadableString()).ToList();
+            }
+            if (nfRegions == null)
+            {
+                nfRegions = regions.Where(reg => (int)reg >= (int)Region.Istan && (int)reg <= (int)Region.DomainOfAnguish)
+                                   .Select(r => r.ToReadableString()).ToList();
+            }
+            if (eotnRegions == null)
+            {
+                eotnRegions = new List<string>();
             }
 
             return campaign switch
             {
                 Campaign.Prophecies => propheciesRegions,
                 Campaign.Cantha => canthanRegions,
-                Campaign.Nightfall => throw new KeyNotFoundException(),
-                Campaign.EyeOfTheNorth => throw new KeyNotFoundException(),
+                Campaign.Nightfall => nfRegions,
+                Campaign.EyeOfTheNorth => eotnRegions,
                 _ => throw new KeyNotFoundException(),
             };
         }

@@ -15,7 +15,7 @@ namespace gwQuest
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1(new QuestService(new QuestRepository("quests.json")), new SettingsRepository("settings.json")));
+            Application.Run(new Form1(new QuestService(new QuestRepository("quests.json")), new SettingsRepository()));
         }
     }
 }

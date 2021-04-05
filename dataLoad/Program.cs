@@ -11,9 +11,17 @@ namespace dataLoad
     {
         static void Main(string[] args)
         {
-            var doc = File.ReadAllText(@"C:\Users\Matte\Downloads\ns.html");
+            var doc = File.ReadAllText(@"C:\Users\Matte\Downloads\domain.html");          
+            doc = doc.Replace("<br>", "");
+            doc = doc.Replace("&nbsp;", "");
+            doc = doc.Replace("height=\"19\">", "height=\"19\"/>");
+            doc = doc.Replace("height=\"20\">", "height=\"20\"/>");
+
             var xml = new XmlDocument();
             xml.LoadXml(doc);
+
+            XmlNode thead = xml.SelectSingleNode("table/thead");
+            if(thead != null) thead.ParentNode.RemoveChild(thead);
 
             XmlNodeList quests = xml.GetElementsByTagName("tr");
 
@@ -27,13 +35,13 @@ namespace dataLoad
                 
                
                 var name = questInfo[0].InnerText;
-                var uri = new Uri(questInfo[0].FirstChild.Attributes["href"].Value);
+                var uri = new Uri(questInfo[0].FirstChild.Attributes["href"].Value); 
                 var primary = questInfo[1].InnerText == "Primary";
 
                 var profession = questInfo[2]?.FirstChild?.FirstChild?.Value;
                 var professionToAdd = profession.IsProfession() ? Profession.None : profession.GetProfession();
 
-                var questItem = new Quest(name, uri, primary, professionToAdd, Campaign.Prophecies, Region.NorthernShiverpeaks, false);
+                var questItem = new Quest(name, uri, primary, professionToAdd, Campaign.Nightfall, Region.DomainOfAnguish, false);
                 questList.Add(questItem);
             }
 

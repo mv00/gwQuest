@@ -1375,5 +1375,2652 @@
     "Campaign": 1,
     "Region": 7,
     "Completed": false
+  },
+  {
+    "Name": "The Bog Beast of Bokku",
+    "Uri": "https://wiki.guildwars.com/wiki/The_Bog_Beast_of_Bokku",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 8,
+    "Completed": false
+  },
+  {
+    "Name": "A Meeting With the Emperor",
+    "Uri": "https://wiki.guildwars.com/wiki/A_Meeting_With_the_Emperor",
+    "Primary": true,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 9,
+    "Completed": false
+  },
+  {
+    "Name": "A Monstrous Revelation",
+    "Uri": "https://wiki.guildwars.com/wiki/A_Monstrous_Revelation",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 9,
+    "Completed": false
+  },
+  {
+    "Name": "An End to Suffering",
+    "Uri": "https://wiki.guildwars.com/wiki/An_End_to_Suffering",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 9,
+    "Completed": false
+  },
+  {
+    "Name": "Assassination Attempt",
+    "Uri": "https://wiki.guildwars.com/wiki/Assassination_Attempt",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 9,
+    "Completed": false
+  },
+  {
+    "Name": "Assist the Guards",
+    "Uri": "https://wiki.guildwars.com/wiki/Assist_the_Guards",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 9,
+    "Completed": false
+  },
+  {
+    "Name": "Battle in the Sewers",
+    "Uri": "https://wiki.guildwars.com/wiki/Battle_in_the_Sewers",
+    "Primary": true,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 9,
+    "Completed": false
+  },
+  {
+    "Name": "Captured",
+    "Uri": "https://wiki.guildwars.com/wiki/Captured",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 9,
+    "Completed": false
+  },
+  {
+    "Name": "Capturing the Orrian Tome",
+    "Uri": "https://wiki.guildwars.com/wiki/Capturing_the_Orrian_Tome",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 9,
+    "Completed": false
+  },
+  {
+    "Name": "Chaos in Kryta",
+    "Uri": "https://wiki.guildwars.com/wiki/Chaos_in_Kryta",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 9,
+    "Completed": false
+  },
+  {
+    "Name": "Charting the Forests",
+    "Uri": "https://wiki.guildwars.com/wiki/Charting_the_Forests",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 9,
+    "Completed": false
+  },
+  {
+    "Name": "Charting the Jade Sea",
+    "Uri": "https://wiki.guildwars.com/wiki/Charting_the_Jade_Sea",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 9,
+    "Completed": false
+  },
+  {
+    "Name": "Chasing Zenmai",
+    "Uri": "https://wiki.guildwars.com/wiki/Chasing_Zenmai",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 9,
+    "Completed": false
+  },
+  {
+    "Name": "Closer to the Stars",
+    "Uri": "https://wiki.guildwars.com/wiki/Closer_to_the_Stars",
+    "Primary": true,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 9,
+    "Completed": false
+  },
+  {
+    "Name": "Deactivating P.O.X.",
+    "Uri": "https://wiki.guildwars.com/wiki/Deactivating_P.O.X.",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 9,
+    "Completed": false
+  },
+  {
+    "Name": "Drink from the Chalice of Corruption",
+    "Uri": "https://wiki.guildwars.com/wiki/Drink_from_the_Chalice_of_Corruption",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 9,
+    "Completed": false
+  },
+  {
+    "Name": "Eliminate the Am Fah",
+    "Uri": "https://wiki.guildwars.com/wiki/Eliminate_the_Am_Fah",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 9,
+    "Completed": false
+  },
+  {
+    "Name": "Eliminate the Jade Brotherhood",
+    "Uri": "https://wiki.guildwars.com/wiki/Eliminate_the_Jade_Brotherhood",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 9,
+    "Completed": false
+  },
+  {
+    "Name": "Feed the Hungry",
+    "Uri": "https://wiki.guildwars.com/wiki/Feed_the_Hungry",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 9,
+    "Completed": false
+  },
+  {
+    "Name": "Finding The Oracle",
+    "Uri": "https://wiki.guildwars.com/wiki/Finding_The_Oracle",
+    "Primary": true,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 9,
+    "Completed": false
+  },
+  {
+    "Name": "Going Home",
+    "Uri": "https://wiki.guildwars.com/wiki/Going_Home",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 9,
+    "Completed": false
+  },
+  {
+    "Name": "Housing for Refugees",
+    "Uri": "https://wiki.guildwars.com/wiki/Housing_for_Refugees",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 9,
+    "Completed": false
+  },
+  {
+    "Name": "I Feel the Earth Move Under Cantha's Feet",
+    "Uri": "https://wiki.guildwars.com/wiki/I_Feel_the_Earth_Move_Under_Cantha%27s_Feet",
+    "Primary": true,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 9,
+    "Completed": false
+  },
+  {
+    "Name": "Imperial Assistance",
+    "Uri": "https://wiki.guildwars.com/wiki/Imperial_Assistance",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 9,
+    "Completed": false
+  },
+  {
+    "Name": "It Ends Here",
+    "Uri": "https://wiki.guildwars.com/wiki/It_Ends_Here",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 9,
+    "Completed": false
+  },
+  {
+    "Name": "Journey to Cavalon",
+    "Uri": "https://wiki.guildwars.com/wiki/Journey_to_Cavalon",
+    "Primary": true,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 9,
+    "Completed": false
+  },
+  {
+    "Name": "Journey to House zu Heltzer",
+    "Uri": "https://wiki.guildwars.com/wiki/Journey_to_House_zu_Heltzer",
+    "Primary": true,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 9,
+    "Completed": false
+  },
+  {
+    "Name": "Lambs to the Slaughter",
+    "Uri": "https://wiki.guildwars.com/wiki/Lambs_to_the_Slaughter",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 9,
+    "Completed": false
+  },
+  {
+    "Name": "Little Lost Bear",
+    "Uri": "https://wiki.guildwars.com/wiki/Little_Lost_Bear",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 9,
+    "Completed": false
+  },
+  {
+    "Name": "Luxury Goods",
+    "Uri": "https://wiki.guildwars.com/wiki/Luxury_Goods",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 9,
+    "Completed": false
+  },
+  {
+    "Name": "Masters of Corruption",
+    "Uri": "https://wiki.guildwars.com/wiki/Masters_of_Corruption",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 9,
+    "Completed": false
+  },
+  {
+    "Name": "Medical Emergency",
+    "Uri": "https://wiki.guildwars.com/wiki/Medical_Emergency",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 9,
+    "Completed": false
+  },
+  {
+    "Name": "Minister's Test",
+    "Uri": "https://wiki.guildwars.com/wiki/Minister%27s_Test",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 9,
+    "Completed": false
+  },
+  {
+    "Name": "Missing Daughter",
+    "Uri": "https://wiki.guildwars.com/wiki/Missing_Daughter",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 9,
+    "Completed": false
+  },
+  {
+    "Name": "Naga Oil",
+    "Uri": "https://wiki.guildwars.com/wiki/Naga_Oil",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 9,
+    "Completed": false
+  },
+  {
+    "Name": "Passing the Buck",
+    "Uri": "https://wiki.guildwars.com/wiki/Passing_the_Buck",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 9,
+    "Completed": false
+  },
+  {
+    "Name": "Problem Salving",
+    "Uri": "https://wiki.guildwars.com/wiki/Problem_Salving",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 9,
+    "Completed": false
+  },
+  {
+    "Name": "Raze the Roost",
+    "Uri": "https://wiki.guildwars.com/wiki/Raze_the_Roost",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 9,
+    "Completed": false
+  },
+  {
+    "Name": "Red Tape",
+    "Uri": "https://wiki.guildwars.com/wiki/Red_Tape",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 9,
+    "Completed": false
+  },
+  {
+    "Name": "Refuse to Drink",
+    "Uri": "https://wiki.guildwars.com/wiki/Refuse_to_Drink",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 9,
+    "Completed": false
+  },
+  {
+    "Name": "Seek out Brother Tosai",
+    "Uri": "https://wiki.guildwars.com/wiki/Seek_out_Brother_Tosai",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 9,
+    "Completed": false
+  },
+  {
+    "Name": "Seeking Shelter",
+    "Uri": "https://wiki.guildwars.com/wiki/Seeking_Shelter",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 9,
+    "Completed": false
+  },
+  {
+    "Name": "Stemming the Tide",
+    "Uri": "https://wiki.guildwars.com/wiki/Stemming_the_Tide",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 9,
+    "Completed": false
+  },
+  {
+    "Name": "Straight to the Top",
+    "Uri": "https://wiki.guildwars.com/wiki/Straight_to_the_Top",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 9,
+    "Completed": false
+  },
+  {
+    "Name": "Street Justice",
+    "Uri": "https://wiki.guildwars.com/wiki/Street_Justice",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 9,
+    "Completed": false
+  },
+  {
+    "Name": "Sunspears in Cantha",
+    "Uri": "https://wiki.guildwars.com/wiki/Sunspears_in_Cantha",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 9,
+    "Completed": false
+  },
+  {
+    "Name": "The Afflicted Guard",
+    "Uri": "https://wiki.guildwars.com/wiki/The_Afflicted_Guard",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 9,
+    "Completed": false
+  },
+  {
+    "Name": "The Challenge",
+    "Uri": "https://wiki.guildwars.com/wiki/The_Challenge",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 9,
+    "Completed": false
+  },
+  {
+    "Name": "The Count's Daughter",
+    "Uri": "https://wiki.guildwars.com/wiki/The_Count%27s_Daughter",
+    "Primary": true,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 9,
+    "Completed": false
+  },
+  {
+    "Name": "The Drunken Master",
+    "Uri": "https://wiki.guildwars.com/wiki/The_Drunken_Master",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 9,
+    "Completed": false
+  },
+  {
+    "Name": "The Emperor in Peril",
+    "Uri": "https://wiki.guildwars.com/wiki/The_Emperor_in_Peril",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 9,
+    "Completed": false
+  },
+  {
+    "Name": "The Missing Corpses",
+    "Uri": "https://wiki.guildwars.com/wiki/The_Missing_Corpses",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 9,
+    "Completed": false
+  },
+  {
+    "Name": "The Missing Link",
+    "Uri": "https://wiki.guildwars.com/wiki/The_Missing_Link",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 9,
+    "Completed": false
+  },
+  {
+    "Name": "The Plot Thickens",
+    "Uri": "https://wiki.guildwars.com/wiki/The_Plot_Thickens",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 9,
+    "Completed": false
+  },
+  {
+    "Name": "The Search for a Cure",
+    "Uri": "https://wiki.guildwars.com/wiki/The_Search_for_a_Cure",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 9,
+    "Completed": false
+  },
+  {
+    "Name": "The Shadow Blades",
+    "Uri": "https://wiki.guildwars.com/wiki/The_Shadow_Blades",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 9,
+    "Completed": false
+  },
+  {
+    "Name": "The Xunlai Agent",
+    "Uri": "https://wiki.guildwars.com/wiki/The_Xunlai_Agent",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 9,
+    "Completed": false
+  },
+  {
+    "Name": "To Tahnnakai Temple",
+    "Uri": "https://wiki.guildwars.com/wiki/To_Tahnnakai_Temple",
+    "Primary": true,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 9,
+    "Completed": false
+  },
+  {
+    "Name": "Too High a Price",
+    "Uri": "https://wiki.guildwars.com/wiki/Too_High_a_Price",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 9,
+    "Completed": false
+  },
+  {
+    "Name": "Welcome to Cantha",
+    "Uri": "https://wiki.guildwars.com/wiki/Welcome_to_Cantha",
+    "Primary": true,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 9,
+    "Completed": false
+  },
+  {
+    "Name": "A New Escort",
+    "Uri": "https://wiki.guildwars.com/wiki/A_New_Escort",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 10,
+    "Completed": false
+  },
+  {
+    "Name": "Artistic Endeavors",
+    "Uri": "https://wiki.guildwars.com/wiki/Artistic_Endeavors",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 10,
+    "Completed": false
+  },
+  {
+    "Name": "Befriending the Kurzicks",
+    "Uri": "https://wiki.guildwars.com/wiki/Befriending_the_Kurzicks",
+    "Primary": true,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 10,
+    "Completed": false
+  },
+  {
+    "Name": "Defend Fort Aspenwood",
+    "Uri": "https://wiki.guildwars.com/wiki/Defend_Fort_Aspenwood",
+    "Primary": true,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 10,
+    "Completed": false
+  },
+  {
+    "Name": "Discord Wallow Lyre",
+    "Uri": "https://wiki.guildwars.com/wiki/Discord_Wallow_Lyre",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 10,
+    "Completed": false
+  },
+  {
+    "Name": "Duel of the Houses",
+    "Uri": "https://wiki.guildwars.com/wiki/Duel_of_the_Houses",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 10,
+    "Completed": false
+  },
+  {
+    "Name": "Envoy of the Dredge",
+    "Uri": "https://wiki.guildwars.com/wiki/Envoy_of_the_Dredge",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 10,
+    "Completed": false
+  },
+  {
+    "Name": "In the Army Now (Kurzick)",
+    "Uri": "https://wiki.guildwars.com/wiki/In_the_Army_Now_(Kurzick)",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 10,
+    "Completed": false
+  },
+  {
+    "Name": "Into the Whirlpool",
+    "Uri": "https://wiki.guildwars.com/wiki/Into_the_Whirlpool",
+    "Primary": true,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 10,
+    "Completed": false
+  },
+  {
+    "Name": "Invoking the Saints",
+    "Uri": "https://wiki.guildwars.com/wiki/Invoking_the_Saints",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 10,
+    "Completed": false
+  },
+  {
+    "Name": "Kurzick Supply Lines",
+    "Uri": "https://wiki.guildwars.com/wiki/Kurzick_Supply_Lines",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 10,
+    "Completed": false
+  },
+  {
+    "Name": "Melodic Gaki Flute",
+    "Uri": "https://wiki.guildwars.com/wiki/Melodic_Gaki_Flute",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 10,
+    "Completed": false
+  },
+  {
+    "Name": "Revolt of the Dredge",
+    "Uri": "https://wiki.guildwars.com/wiki/Revolt_of_the_Dredge",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 10,
+    "Completed": false
+  },
+  {
+    "Name": "Rhythm Drinker Drum",
+    "Uri": "https://wiki.guildwars.com/wiki/Rhythm_Drinker_Drum",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 10,
+    "Completed": false
+  },
+  {
+    "Name": "Scouting Ferndale",
+    "Uri": "https://wiki.guildwars.com/wiki/Scouting_Ferndale",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 10,
+    "Completed": false
+  },
+  {
+    "Name": "Securing Echovald Forest",
+    "Uri": "https://wiki.guildwars.com/wiki/Securing_Echovald_Forest",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 10,
+    "Completed": false
+  },
+  {
+    "Name": "Song and Stone",
+    "Uri": "https://wiki.guildwars.com/wiki/Song_and_Stone",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 10,
+    "Completed": false
+  },
+  {
+    "Name": "Temple of the Dredge",
+    "Uri": "https://wiki.guildwars.com/wiki/Temple_of_the_Dredge",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 10,
+    "Completed": false
+  },
+  {
+    "Name": "The Ancient Forest",
+    "Uri": "https://wiki.guildwars.com/wiki/The_Ancient_Forest",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 10,
+    "Completed": false
+  },
+  {
+    "Name": "The Beak of Darkness",
+    "Uri": "https://wiki.guildwars.com/wiki/The_Beak_of_Darkness",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 10,
+    "Completed": false
+  },
+  {
+    "Name": "The Convocation",
+    "Uri": "https://wiki.guildwars.com/wiki/The_Convocation",
+    "Primary": true,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 10,
+    "Completed": false
+  },
+  {
+    "Name": "The Defenders of the Forest",
+    "Uri": "https://wiki.guildwars.com/wiki/The_Defenders_of_the_Forest",
+    "Primary": true,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 10,
+    "Completed": false
+  },
+  {
+    "Name": "The Experimental Weaponsmith",
+    "Uri": "https://wiki.guildwars.com/wiki/The_Experimental_Weaponsmith",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 10,
+    "Completed": false
+  },
+  {
+    "Name": "The Jade Quarry",
+    "Uri": "https://wiki.guildwars.com/wiki/The_Jade_Quarry_(Kurzick_quest)",
+    "Primary": true,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 10,
+    "Completed": false
+  },
+  {
+    "Name": "Wardens On the March",
+    "Uri": "https://wiki.guildwars.com/wiki/Wardens_On_the_March",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 10,
+    "Completed": false
+  },
+  {
+    "Name": "Wicked Wardens",
+    "Uri": "https://wiki.guildwars.com/wiki/Wicked_Wardens",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 10,
+    "Completed": false
+  },
+  {
+    "Name": "A Letter Home",
+    "Uri": "https://wiki.guildwars.com/wiki/A_Letter_Home",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 11,
+    "Completed": false
+  },
+  {
+    "Name": "Attack the Kurzicks!",
+    "Uri": "https://wiki.guildwars.com/wiki/Attack_the_Kurzicks!",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 11,
+    "Completed": false
+  },
+  {
+    "Name": "Befriending the Luxons",
+    "Uri": "https://wiki.guildwars.com/wiki/Befriending_the_Luxons",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 11,
+    "Completed": false
+  },
+  {
+    "Name": "Challenge of Strength",
+    "Uri": "https://wiki.guildwars.com/wiki/Challenge_of_Strength",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 11,
+    "Completed": false
+  },
+  {
+    "Name": "City Under Attack",
+    "Uri": "https://wiki.guildwars.com/wiki/City_Under_Attack",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 11,
+    "Completed": false
+  },
+  {
+    "Name": "Fort Aspenwood",
+    "Uri": "https://wiki.guildwars.com/wiki/Fort_Aspenwood_(quest)",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 11,
+    "Completed": false
+  },
+  {
+    "Name": "If It Weren't for Bad Luck....",
+    "Uri": "https://wiki.guildwars.com/wiki/If_It_Weren%27t_for_Bad_Luck....",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 11,
+    "Completed": false
+  },
+  {
+    "Name": "In the Army (Luxon)",
+    "Uri": "https://wiki.guildwars.com/wiki/In_the_Army_(Luxon)",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 11,
+    "Completed": false
+  },
+  {
+    "Name": "Journey to the Whirlpool",
+    "Uri": "https://wiki.guildwars.com/wiki/Journey_to_the_Whirlpool",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 11,
+    "Completed": false
+  },
+  {
+    "Name": "Luxon Supply Lines",
+    "Uri": "https://wiki.guildwars.com/wiki/Luxon_Supply_Lines",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 11,
+    "Completed": false
+  },
+  {
+    "Name": "Message on a Dragon Scale",
+    "Uri": "https://wiki.guildwars.com/wiki/Message_on_a_Dragon_Scale",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 11,
+    "Completed": false
+  },
+  {
+    "Name": "Messages, Messages Everywhere",
+    "Uri": "https://wiki.guildwars.com/wiki/Messages,_Messages_Everywhere",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 11,
+    "Completed": false
+  },
+  {
+    "Name": "More Cowbell",
+    "Uri": "https://wiki.guildwars.com/wiki/More_Cowbell",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 11,
+    "Completed": false
+  },
+  {
+    "Name": "Night Raiders",
+    "Uri": "https://wiki.guildwars.com/wiki/Night_Raiders",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 11,
+    "Completed": false
+  },
+  {
+    "Name": "Outcasts in the Quarry",
+    "Uri": "https://wiki.guildwars.com/wiki/Outcasts_in_the_Quarry",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 11,
+    "Completed": false
+  },
+  {
+    "Name": "Protect the Halcyon",
+    "Uri": "https://wiki.guildwars.com/wiki/Protect_the_Halcyon",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 11,
+    "Completed": false
+  },
+  {
+    "Name": "Return of the Yeti",
+    "Uri": "https://wiki.guildwars.com/wiki/Return_of_the_Yeti",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 11,
+    "Completed": false
+  },
+  {
+    "Name": "Scout the Coast",
+    "Uri": "https://wiki.guildwars.com/wiki/Scout_the_Coast",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 11,
+    "Completed": false
+  },
+  {
+    "Name": "Scouting Maishang Hills",
+    "Uri": "https://wiki.guildwars.com/wiki/Scouting_Maishang_Hills",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 11,
+    "Completed": false
+  },
+  {
+    "Name": "Stolen Eggs",
+    "Uri": "https://wiki.guildwars.com/wiki/Stolen_Eggs",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 11,
+    "Completed": false
+  },
+  {
+    "Name": "Taking Back the Palace",
+    "Uri": "https://wiki.guildwars.com/wiki/Taking_Back_the_Palace",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 11,
+    "Completed": false
+  },
+  {
+    "Name": "The Dragon Hunter",
+    "Uri": "https://wiki.guildwars.com/wiki/The_Dragon_Hunter",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 11,
+    "Completed": false
+  },
+  {
+    "Name": "The Halcyon Job",
+    "Uri": "https://wiki.guildwars.com/wiki/The_Halcyon_Job",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 11,
+    "Completed": false
+  },
+  {
+    "Name": "The Impossible Sea Monster",
+    "Uri": "https://wiki.guildwars.com/wiki/The_Impossible_Sea_Monster",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 11,
+    "Completed": false
+  },
+  {
+    "Name": "The Jade Arena",
+    "Uri": "https://wiki.guildwars.com/wiki/The_Jade_Arena",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 11,
+    "Completed": false
+  },
+  {
+    "Name": "The Jade Quarry",
+    "Uri": "https://wiki.guildwars.com/wiki/The_Jade_Quarry_(Luxon_quest)",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 11,
+    "Completed": false
+  },
+  {
+    "Name": "The Zenos Squad",
+    "Uri": "https://wiki.guildwars.com/wiki/The_Zenos_Squad",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 2,
+    "Region": 11,
+    "Completed": false
+  },
+  {
+    "Name": "All for One and One for Justice",
+    "Uri": "https://wiki.guildwars.com/wiki/All_for_One_and_One_for_Justice",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 12,
+    "Completed": false
+  },
+  {
+    "Name": "Chasing Zenmai",
+    "Uri": "https://wiki.guildwars.com/wiki/Chasing_Zenmai",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 12,
+    "Completed": false
+  },
+  {
+    "Name": "Command Training",
+    "Uri": "https://wiki.guildwars.com/wiki/Command_Training",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 12,
+    "Completed": false
+  },
+  {
+    "Name": "Hole of Istan",
+    "Uri": "https://wiki.guildwars.com/wiki/Hole_of_Istan",
+    "Primary": true,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 12,
+    "Completed": false
+  },
+  {
+    "Name": "Student Jin",
+    "Uri": "https://wiki.guildwars.com/wiki/Student_Jin",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 12,
+    "Completed": false
+  },
+  {
+    "Name": "Student Sousuke",
+    "Uri": "https://wiki.guildwars.com/wiki/Student_Sousuke",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 12,
+    "Completed": false
+  },
+  {
+    "Name": "The Council is Called",
+    "Uri": "https://wiki.guildwars.com/wiki/The_Council_is_Called",
+    "Primary": true,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 12,
+    "Completed": false
+  },
+  {
+    "Name": "The Time is Nigh",
+    "Uri": "https://wiki.guildwars.com/wiki/The_Time_is_Nigh",
+    "Primary": true,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 12,
+    "Completed": false
+  },
+  {
+    "Name": "The Toy's Story",
+    "Uri": "https://wiki.guildwars.com/wiki/The_Toy%27s_Story",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 12,
+    "Completed": false
+  },
+  {
+    "Name": "Zaishen Elite",
+    "Uri": "https://wiki.guildwars.com/wiki/Zaishen_Elite_(quest)",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 12,
+    "Completed": false
+  },
+
+  {
+    "Name": "A Bushel of Trouble",
+    "Uri": "https://wiki.guildwars.com/wiki/A_Bushel_of_Trouble",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 13,
+    "Completed": false
+  },
+  {
+    "Name": "A Fool's Luck",
+    "Uri": "https://wiki.guildwars.com/wiki/A_Fool%27s_Luck",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 13,
+    "Completed": false
+  },
+  {
+    "Name": "A Little Recon",
+    "Uri": "https://wiki.guildwars.com/wiki/A_Little_Recon",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 13,
+    "Completed": false
+  },
+  {
+    "Name": "A Message for Janeera",
+    "Uri": "https://wiki.guildwars.com/wiki/A_Message_for_Janeera",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 13,
+    "Completed": false
+  },
+  {
+    "Name": "A Prescription for Conscription",
+    "Uri": "https://wiki.guildwars.com/wiki/A_Prescription_for_Conscription",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 13,
+    "Completed": false
+  },
+  {
+    "Name": "A Question of Morality",
+    "Uri": "https://wiki.guildwars.com/wiki/A_Question_of_Morality",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 13,
+    "Completed": false
+  },
+  {
+    "Name": "A Thorn in Varesh's Side",
+    "Uri": "https://wiki.guildwars.com/wiki/A_Thorn_in_Varesh%27s_Side",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 13,
+    "Completed": false
+  },
+  {
+    "Name": "Ancestral Anguish",
+    "Uri": "https://wiki.guildwars.com/wiki/Ancestral_Anguish",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 13,
+    "Completed": false
+  },
+  {
+    "Name": "And a Hero Shall Lead Them",
+    "Uri": "https://wiki.guildwars.com/wiki/And_a_Hero_Shall_Lead_Them",
+    "Primary": true,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 13,
+    "Completed": false
+  },
+  {
+    "Name": "Battle of Turai's Procession",
+    "Uri": "https://wiki.guildwars.com/wiki/Battle_of_Turai%27s_Procession",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 13,
+    "Completed": false
+  },
+  {
+    "Name": "Building the Base: Prisoners of War",
+    "Uri": "https://wiki.guildwars.com/wiki/Building_the_Base:_Prisoners_of_War",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 13,
+    "Completed": false
+  },
+  {
+    "Name": "Building the Base: The Interrogation",
+    "Uri": "https://wiki.guildwars.com/wiki/Building_the_Base:_The_Interrogation",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 13,
+    "Completed": false
+  },
+  {
+    "Name": "Building the Base: The Meeting",
+    "Uri": "https://wiki.guildwars.com/wiki/Building_the_Base:_The_Meeting",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 13,
+    "Completed": false
+  },
+  {
+    "Name": "Centaur Blackmail",
+    "Uri": "https://wiki.guildwars.com/wiki/Centaur_Blackmail",
+    "Primary": true,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 13,
+    "Completed": false
+  },
+  {
+    "Name": "Centaur Concerns",
+    "Uri": "https://wiki.guildwars.com/wiki/Centaur_Concerns",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 13,
+    "Completed": false
+  },
+  {
+    "Name": "Crossing the Desolation",
+    "Uri": "https://wiki.guildwars.com/wiki/Crossing_the_Desolation",
+    "Primary": true,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 13,
+    "Completed": false
+  },
+  {
+    "Name": "Drake in a Cage",
+    "Uri": "https://wiki.guildwars.com/wiki/Drake_in_a_Cage",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 13,
+    "Completed": false
+  },
+  {
+    "Name": "Drakes on the Plain",
+    "Uri": "https://wiki.guildwars.com/wiki/Drakes_on_the_Plain",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 13,
+    "Completed": false
+  },
+  {
+    "Name": "Eavesdropping",
+    "Uri": "https://wiki.guildwars.com/wiki/Eavesdropping",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 13,
+    "Completed": false
+  },
+  {
+    "Name": "Estate Planning",
+    "Uri": "https://wiki.guildwars.com/wiki/Estate_Planning",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 13,
+    "Completed": false
+  },
+  {
+    "Name": "Family Ties",
+    "Uri": "https://wiki.guildwars.com/wiki/Family_Ties_(Nightfall_quest)",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 13,
+    "Completed": false
+  },
+  {
+    "Name": "Feeding Frenzy",
+    "Uri": "https://wiki.guildwars.com/wiki/Feeding_Frenzy",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 13,
+    "Completed": false
+  },
+  {
+    "Name": "Fish in a Barrel",
+    "Uri": "https://wiki.guildwars.com/wiki/Fish_in_a_Barrel",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 13,
+    "Completed": false
+  },
+  {
+    "Name": "For a Price",
+    "Uri": "https://wiki.guildwars.com/wiki/For_a_Price",
+    "Primary": true,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 13,
+    "Completed": false
+  },
+  {
+    "Name": "Herds to the Slaughter",
+    "Uri": "https://wiki.guildwars.com/wiki/Herds_to_the_Slaughter",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 13,
+    "Completed": false
+  },
+  {
+    "Name": "Hunted!",
+    "Uri": "https://wiki.guildwars.com/wiki/Hunted!",
+    "Primary": true,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 13,
+    "Completed": false
+  },
+  {
+    "Name": "Insatiable Appetite",
+    "Uri": "https://wiki.guildwars.com/wiki/Insatiable_Appetite",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 13,
+    "Completed": false
+  },
+  {
+    "Name": "Koss Goes Recruiting",
+    "Uri": "https://wiki.guildwars.com/wiki/Koss_Goes_Recruiting",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 13,
+    "Completed": false
+  },
+  {
+    "Name": "Koss's Elixir",
+    "Uri": "https://wiki.guildwars.com/wiki/Koss%27s_Elixir",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 13,
+    "Completed": false
+  },
+  {
+    "Name": "Melonni Goes Recruiting",
+    "Uri": "https://wiki.guildwars.com/wiki/Melonni_Goes_Recruiting",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 13,
+    "Completed": false
+  },
+  {
+    "Name": "Melonni's Meditations",
+    "Uri": "https://wiki.guildwars.com/wiki/Melonni%27s_Meditations",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 13,
+    "Completed": false
+  },
+  {
+    "Name": "Mirza's Last Stand",
+    "Uri": "https://wiki.guildwars.com/wiki/Mirza%27s_Last_Stand",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 13,
+    "Completed": false
+  },
+  {
+    "Name": "Mysterious Message",
+    "Uri": "https://wiki.guildwars.com/wiki/Mysterious_Message_(Nightfall_quest)",
+    "Primary": true,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 13,
+    "Completed": false
+  },
+  {
+    "Name": "No Me, No Kormir",
+    "Uri": "https://wiki.guildwars.com/wiki/No_Me,_No_Kormir",
+    "Primary": true,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 13,
+    "Completed": false
+  },
+  {
+    "Name": "Old Woman River",
+    "Uri": "https://wiki.guildwars.com/wiki/Old_Woman_River",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 13,
+    "Completed": false
+  },
+  {
+    "Name": "Secrets in the Shadow",
+    "Uri": "https://wiki.guildwars.com/wiki/Secrets_in_the_Shadow",
+    "Primary": true,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 13,
+    "Completed": false
+  },
+  {
+    "Name": "Tendering an Offer",
+    "Uri": "https://wiki.guildwars.com/wiki/Tendering_an_Offer",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 13,
+    "Completed": false
+  },
+  {
+    "Name": "The Battle of Jahai",
+    "Uri": "https://wiki.guildwars.com/wiki/The_Battle_of_Jahai",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 13,
+    "Completed": false
+  },
+  {
+    "Name": "The Command Post",
+    "Uri": "https://wiki.guildwars.com/wiki/The_Command_Post",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 13,
+    "Completed": false
+  },
+  {
+    "Name": "The Dejarin Estate",
+    "Uri": "https://wiki.guildwars.com/wiki/The_Dejarin_Estate",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 13,
+    "Completed": false
+  },
+  {
+    "Name": "The Foolhardy Father",
+    "Uri": "https://wiki.guildwars.com/wiki/The_Foolhardy_Father",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 13,
+    "Completed": false
+  },
+  {
+    "Name": "The Great Escape",
+    "Uri": "https://wiki.guildwars.com/wiki/The_Great_Escape",
+    "Primary": true,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 13,
+    "Completed": false
+  },
+  {
+    "Name": "The Great Zehtuka (quest)",
+    "Uri": "https://wiki.guildwars.com/wiki/The_Great_Zehtuka_(quest)",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 13,
+    "Completed": false
+  },
+  {
+    "Name": "The Tools of War",
+    "Uri": "https://wiki.guildwars.com/wiki/The_Tools_of_War",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 13,
+    "Completed": false
+  },
+  {
+    "Name": "The Young Lady Vanishes",
+    "Uri": "https://wiki.guildwars.com/wiki/The_Young_Lady_Vanishes",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 13,
+    "Completed": false
+  },
+  {
+    "Name": "To Kill a Demon",
+    "Uri": "https://wiki.guildwars.com/wiki/To_Kill_a_Demon",
+    "Primary": true,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 13,
+    "Completed": false
+  },
+  {
+    "Name": "To Vabbi!",
+    "Uri": "https://wiki.guildwars.com/wiki/To_Vabbi!",
+    "Primary": true,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 13,
+    "Completed": false
+  },
+  {
+    "Name": "Total Corruption",
+    "Uri": "https://wiki.guildwars.com/wiki/Total_Corruption",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 13,
+    "Completed": false
+  },
+  {
+    "Name": "Troubled Lands",
+    "Uri": "https://wiki.guildwars.com/wiki/Troubled_Lands",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 13,
+    "Completed": false
+  },
+  {
+    "Name": "Undead Defenders",
+    "Uri": "https://wiki.guildwars.com/wiki/Undead_Defenders",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 13,
+    "Completed": false
+  },
+  {
+    "Name": "Weird Waters",
+    "Uri": "https://wiki.guildwars.com/wiki/Weird_Waters",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 13,
+    "Completed": false
+  },
+  {
+    "Name": "You Can Run...",
+    "Uri": "https://wiki.guildwars.com/wiki/You_Can_Run...",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 13,
+    "Completed": false
+  },
+  {
+    "Name": "A Brief Introduction",
+    "Uri": "https://wiki.guildwars.com/wiki/A_Brief_Introduction",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 14,
+    "Completed": false
+  },
+  {
+    "Name": "A Sound of Ancient Horns",
+    "Uri": "https://wiki.guildwars.com/wiki/A_Sound_of_Ancient_Horns",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 14,
+    "Completed": false
+  },
+  {
+    "Name": "All's Well That Ends Well",
+    "Uri": "https://wiki.guildwars.com/wiki/All%27s_Well_That_Ends_Well",
+    "Primary": true,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 14,
+    "Completed": false
+  },
+  {
+    "Name": "Attack at the Kodash",
+    "Uri": "https://wiki.guildwars.com/wiki/Attack_at_the_Kodash",
+    "Primary": true,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 14,
+    "Completed": false
+  },
+  {
+    "Name": "Between a Rock...",
+    "Uri": "https://wiki.guildwars.com/wiki/Between_a_Rock...",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 14,
+    "Completed": false
+  },
+  {
+    "Name": "Botanical Research",
+    "Uri": "https://wiki.guildwars.com/wiki/Botanical_Research",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 14,
+    "Completed": false
+  },
+  {
+    "Name": "Brains or Brawn",
+    "Uri": "https://wiki.guildwars.com/wiki/Brains_or_Brawn",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 14,
+    "Completed": false
+  },
+  {
+    "Name": "Calling the Order",
+    "Uri": "https://wiki.guildwars.com/wiki/Calling_the_Order",
+    "Primary": true,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 14,
+    "Completed": false
+  },
+  {
+    "Name": "Coffer of Joko",
+    "Uri": "https://wiki.guildwars.com/wiki/Coffer_of_Joko",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 14,
+    "Completed": false
+  },
+  {
+    "Name": "Crossing the Desolation",
+    "Uri": "https://wiki.guildwars.com/wiki/Crossing_the_Desolation",
+    "Primary": true,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 14,
+    "Completed": false
+  },
+  {
+    "Name": "Data Mining",
+    "Uri": "https://wiki.guildwars.com/wiki/Data_Mining",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 14,
+    "Completed": false
+  },
+  {
+    "Name": "Deactivating N.O.X.",
+    "Uri": "https://wiki.guildwars.com/wiki/Deactivating_N.O.X.",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 14,
+    "Completed": false
+  },
+  {
+    "Name": "Desperate Measures",
+    "Uri": "https://wiki.guildwars.com/wiki/Desperate_Measures",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 14,
+    "Completed": false
+  },
+  {
+    "Name": "Destroy the Harpies",
+    "Uri": "https://wiki.guildwars.com/wiki/Destroy_the_Harpies",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 14,
+    "Completed": false
+  },
+  {
+    "Name": "Extinction",
+    "Uri": "https://wiki.guildwars.com/wiki/Extinction",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 14,
+    "Completed": false
+  },
+  {
+    "Name": "For Your Ears Only",
+    "Uri": "https://wiki.guildwars.com/wiki/For_Your_Ears_Only",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 14,
+    "Completed": false
+  },
+  {
+    "Name": "Garden Chores",
+    "Uri": "https://wiki.guildwars.com/wiki/Garden_Chores",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 14,
+    "Completed": false
+  },
+  {
+    "Name": "Gift of the Djinn",
+    "Uri": "https://wiki.guildwars.com/wiki/Gift_of_the_Djinn",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 14,
+    "Completed": false
+  },
+  {
+    "Name": "Goren's Stuff: Part 1",
+    "Uri": "https://wiki.guildwars.com/wiki/Goren%27s_Stuff:_Part_1",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 14,
+    "Completed": false
+  },
+  {
+    "Name": "Goren's Stuff: Part 2",
+    "Uri": "https://wiki.guildwars.com/wiki/Goren%27s_Stuff:_Part_2",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 14,
+    "Completed": false
+  },
+  {
+    "Name": "Greed and Regret",
+    "Uri": "https://wiki.guildwars.com/wiki/Greed_and_Regret",
+    "Primary": true,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 14,
+    "Completed": false
+  },
+  {
+    "Name": "Guard Rescue",
+    "Uri": "https://wiki.guildwars.com/wiki/Guard_Rescue",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 14,
+    "Completed": false
+  },
+  {
+    "Name": "Heart or Mind: Garden in Danger",
+    "Uri": "https://wiki.guildwars.com/wiki/Heart_or_Mind:_Garden_in_Danger",
+    "Primary": true,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 14,
+    "Completed": false
+  },
+  {
+    "Name": "Heart or Mind: Ronjok in Danger",
+    "Uri": "https://wiki.guildwars.com/wiki/Heart_or_Mind:_Ronjok_in_Danger",
+    "Primary": true,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 14,
+    "Completed": false
+  },
+  {
+    "Name": "In Defense of Theatre",
+    "Uri": "https://wiki.guildwars.com/wiki/In_Defense_of_Theatre",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 14,
+    "Completed": false
+  },
+  {
+    "Name": "Interception",
+    "Uri": "https://wiki.guildwars.com/wiki/Interception",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 14,
+    "Completed": false
+  },
+  {
+    "Name": "Norgu's Nightfall",
+    "Uri": "https://wiki.guildwars.com/wiki/Norgu%27s_Nightfall",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 14,
+    "Completed": false
+  },
+  {
+    "Name": "Old Friends",
+    "Uri": "https://wiki.guildwars.com/wiki/Old_Friends",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 14,
+    "Completed": false
+  },
+  {
+    "Name": "One Man's Dream",
+    "Uri": "https://wiki.guildwars.com/wiki/One_Man%27s_Dream",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 14,
+    "Completed": false
+  },
+  {
+    "Name": "Plague of Frogs",
+    "Uri": "https://wiki.guildwars.com/wiki/Plague_of_Frogs",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 14,
+    "Completed": false
+  },
+  {
+    "Name": "Pledge of the Merchant Princes",
+    "Uri": "https://wiki.guildwars.com/wiki/Pledge_of_the_Merchant_Princes",
+    "Primary": true,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 14,
+    "Completed": false
+  },
+  {
+    "Name": "Population Control",
+    "Uri": "https://wiki.guildwars.com/wiki/Population_Control",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 14,
+    "Completed": false
+  },
+  {
+    "Name": "Protect the Learned",
+    "Uri": "https://wiki.guildwars.com/wiki/Protect_the_Learned",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 14,
+    "Completed": false
+  },
+  {
+    "Name": "Puzzling Parchment",
+    "Uri": "https://wiki.guildwars.com/wiki/Puzzling_Parchment",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 14,
+    "Completed": false
+  },
+  {
+    "Name": "Rally The Princes",
+    "Uri": "https://wiki.guildwars.com/wiki/Rally_The_Princes",
+    "Primary": true,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 14,
+    "Completed": false
+  },
+  {
+    "Name": "Reclaiming the Temple",
+    "Uri": "https://wiki.guildwars.com/wiki/Reclaiming_the_Temple",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 14,
+    "Completed": false
+  },
+  {
+    "Name": "Scorched Earth",
+    "Uri": "https://wiki.guildwars.com/wiki/Scorched_Earth_(Nightfall_quest)",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 14,
+    "Completed": false
+  },
+  {
+    "Name": "Summertime for Bokka",
+    "Uri": "https://wiki.guildwars.com/wiki/Summertime_for_Bokka",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 14,
+    "Completed": false
+  },
+  {
+    "Name": "The Hanging Gardener",
+    "Uri": "https://wiki.guildwars.com/wiki/The_Hanging_Gardener",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 14,
+    "Completed": false
+  },
+  {
+    "Name": "The Madness of Prophecy",
+    "Uri": "https://wiki.guildwars.com/wiki/The_Madness_of_Prophecy",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 14,
+    "Completed": false
+  },
+  {
+    "Name": "The Role of a Lifetime",
+    "Uri": "https://wiki.guildwars.com/wiki/The_Role_of_a_Lifetime",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 14,
+    "Completed": false
+  },
+  {
+    "Name": "The Scourge of Vabbi",
+    "Uri": "https://wiki.guildwars.com/wiki/The_Scourge_of_Vabbi",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 14,
+    "Completed": false
+  },
+  {
+    "Name": "The Search for Enlightenment",
+    "Uri": "https://wiki.guildwars.com/wiki/The_Search_for_Enlightenment",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 14,
+    "Completed": false
+  },
+  {
+    "Name": "The Search for Survivors",
+    "Uri": "https://wiki.guildwars.com/wiki/The_Search_for_Survivors",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 14,
+    "Completed": false
+  },
+  {
+    "Name": "The Show Must Go On",
+    "Uri": "https://wiki.guildwars.com/wiki/The_Show_Must_Go_On",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 14,
+    "Completed": false
+  },
+  {
+    "Name": "To the Rescue (Nightfall quest)",
+    "Uri": "https://wiki.guildwars.com/wiki/To_the_Rescue_(Nightfall_quest)",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 14,
+    "Completed": false
+  },
+  {
+    "Name": "Valley of the Rifts",
+    "Uri": "https://wiki.guildwars.com/wiki/Valley_of_the_Rifts",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 14,
+    "Completed": false
+  },
+  {
+    "Name": "Warning Kehanni",
+    "Uri": "https://wiki.guildwars.com/wiki/Warning_Kehanni",
+    "Primary": true,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 14,
+    "Completed": false
+  },
+  {
+    "Name": "Which Way Did He Go?",
+    "Uri": "https://wiki.guildwars.com/wiki/Which_Way_Did_He_Go%3F",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 14,
+    "Completed": false
+  },
+  {
+    "Name": "Worst. Performance. Ever.",
+    "Uri": "https://wiki.guildwars.com/wiki/Worst._Performance._Ever.",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 14,
+    "Completed": false
+  },
+  {
+    "Name": "A Deal's a Deal",
+    "Uri": "https://wiki.guildwars.com/wiki/A_Deal%27s_a_Deal",
+    "Primary": true,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 15,
+    "Completed": false
+  },
+  {
+    "Name": "A New Guide",
+    "Uri": "https://wiki.guildwars.com/wiki/A_New_Guide",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 15,
+    "Completed": false
+  },
+  {
+    "Name": "A Show of Force",
+    "Uri": "https://wiki.guildwars.com/wiki/A_Show_of_Force",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 15,
+    "Completed": false
+  },
+  {
+    "Name": "A Tasty Morsel",
+    "Uri": "https://wiki.guildwars.com/wiki/A_Tasty_Morsel",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 15,
+    "Completed": false
+  },
+  {
+    "Name": "Destroy the Ungrateful Slaves",
+    "Uri": "https://wiki.guildwars.com/wiki/Destroy_the_Ungrateful_Slaves",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 15,
+    "Completed": false
+  },
+  {
+    "Name": "Family Soul",
+    "Uri": "https://wiki.guildwars.com/wiki/Family_Soul",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 15,
+    "Completed": false
+  },
+  {
+    "Name": "Forgotten Retribution",
+    "Uri": "https://wiki.guildwars.com/wiki/Forgotten_Retribution",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 15,
+    "Completed": false
+  },
+  {
+    "Name": "Getting Even",
+    "Uri": "https://wiki.guildwars.com/wiki/Getting_Even",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 15,
+    "Completed": false
+  },
+  {
+    "Name": "Horde of Darkness",
+    "Uri": "https://wiki.guildwars.com/wiki/Horde_of_Darkness",
+    "Primary": true,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 15,
+    "Completed": false
+  },
+  {
+    "Name": "Last of the Breed",
+    "Uri": "https://wiki.guildwars.com/wiki/Last_of_the_Breed",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 15,
+    "Completed": false
+  },
+  {
+    "Name": "Pilgrimage",
+    "Uri": "https://wiki.guildwars.com/wiki/Pilgrimage",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 15,
+    "Completed": false
+  },
+  {
+    "Name": "Raising an Army",
+    "Uri": "https://wiki.guildwars.com/wiki/Raising_an_Army",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 15,
+    "Completed": false
+  },
+  {
+    "Name": "Refuse the King",
+    "Uri": "https://wiki.guildwars.com/wiki/Refuse_the_King",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 15,
+    "Completed": false
+  },
+  {
+    "Name": "Requiem for a Brain",
+    "Uri": "https://wiki.guildwars.com/wiki/Requiem_for_a_Brain",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 15,
+    "Completed": false
+  },
+  {
+    "Name": "Return of the Undead King",
+    "Uri": "https://wiki.guildwars.com/wiki/Return_of_the_Undead_King",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 15,
+    "Completed": false
+  },
+  {
+    "Name": "She Hungers",
+    "Uri": "https://wiki.guildwars.com/wiki/She_Hungers",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 15,
+    "Completed": false
+  },
+  {
+    "Name": "Sticks and Stones",
+    "Uri": "https://wiki.guildwars.com/wiki/Sticks_and_Stones",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 15,
+    "Completed": false
+  },
+  {
+    "Name": "Strange Bedfellows",
+    "Uri": "https://wiki.guildwars.com/wiki/Strange_Bedfellows",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 15,
+    "Completed": false
+  },
+  {
+    "Name": "Temple of the Monoliths",
+    "Uri": "https://wiki.guildwars.com/wiki/Temple_of_the_Monoliths",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 15,
+    "Completed": false
+  },
+  {
+    "Name": "The Cold Touch of the Past",
+    "Uri": "https://wiki.guildwars.com/wiki/The_Cold_Touch_of_the_Past",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 15,
+    "Completed": false
+  },
+  {
+    "Name": "The Growing Threat",
+    "Uri": "https://wiki.guildwars.com/wiki/The_Growing_Threat",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 15,
+    "Completed": false
+  },
+  {
+    "Name": "The Hallowed Point",
+    "Uri": "https://wiki.guildwars.com/wiki/The_Hallowed_Point",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 15,
+    "Completed": false
+  },
+  {
+    "Name": "Under New Management",
+    "Uri": "https://wiki.guildwars.com/wiki/Under_New_Management",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 15,
+    "Completed": false
+  },
+  {
+    "Name": "Vanishing Spirits",
+    "Uri": "https://wiki.guildwars.com/wiki/Vanishing_Spirits",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 15,
+    "Completed": false
+  },
+  {
+    "Name": "Wayward Guide",
+    "Uri": "https://wiki.guildwars.com/wiki/Wayward_Guide",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 15,
+    "Completed": false
+  },
+  {
+    "Name": "A Fleshy Operation",
+    "Uri": "https://wiki.guildwars.com/wiki/A_Fleshy_Operation",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 16,
+    "Completed": false
+  },
+  {
+    "Name": "A Flickering Flame",
+    "Uri": "https://wiki.guildwars.com/wiki/A_Flickering_Flame",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 16,
+    "Completed": false
+  },
+  {
+    "Name": "A History of Violence",
+    "Uri": "https://wiki.guildwars.com/wiki/A_History_of_Violence",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 16,
+    "Completed": false
+  },
+  {
+    "Name": "All Alone in the Darkness",
+    "Uri": "https://wiki.guildwars.com/wiki/All_Alone_in_the_Darkness",
+    "Primary": true,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 16,
+    "Completed": false
+  },
+  {
+    "Name": "Bad Fortune",
+    "Uri": "https://wiki.guildwars.com/wiki/Bad_Fortune",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 16,
+    "Completed": false
+  },
+  {
+    "Name": "Blueprint of the Fall",
+    "Uri": "https://wiki.guildwars.com/wiki/Blueprint_of_the_Fall",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 16,
+    "Completed": false
+  },
+  {
+    "Name": "Breaking the Broken",
+    "Uri": "https://wiki.guildwars.com/wiki/Breaking_the_Broken",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 16,
+    "Completed": false
+  },
+  {
+    "Name": "Cover Your Tracks",
+    "Uri": "https://wiki.guildwars.com/wiki/Cover_Your_Tracks",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 16,
+    "Completed": false
+  },
+  {
+    "Name": "Dark Gateway",
+    "Uri": "https://wiki.guildwars.com/wiki/Dark_Gateway",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 16,
+    "Completed": false
+  },
+  {
+    "Name": "Dismember the Titans",
+    "Uri": "https://wiki.guildwars.com/wiki/Dismember_the_Titans",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 16,
+    "Completed": false
+  },
+  {
+    "Name": "Drink of the Gods",
+    "Uri": "https://wiki.guildwars.com/wiki/Drink_of_the_Gods",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 16,
+    "Completed": false
+  },
+  {
+    "Name": "Escape from the Torment",
+    "Uri": "https://wiki.guildwars.com/wiki/Escape_from_the_Torment",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 16,
+    "Completed": false
+  },
+  {
+    "Name": "Faded Memory",
+    "Uri": "https://wiki.guildwars.com/wiki/Faded_Memory",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 16,
+    "Completed": false
+  },
+  {
+    "Name": "Finding a Purpose",
+    "Uri": "https://wiki.guildwars.com/wiki/Finding_a_Purpose",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 16,
+    "Completed": false
+  },
+  {
+    "Name": "Gain Goren",
+    "Uri": "https://wiki.guildwars.com/wiki/Gain_Goren",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 16,
+    "Completed": false
+  },
+  {
+    "Name": "Gain Jin",
+    "Uri": "https://wiki.guildwars.com/wiki/Gain_Jin",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 16,
+    "Completed": false
+  },
+  {
+    "Name": "Gain Margrid",
+    "Uri": "https://wiki.guildwars.com/wiki/Gain_Margrid",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 16,
+    "Completed": false
+  },
+  {
+    "Name": "Gain Master of Whispers",
+    "Uri": "https://wiki.guildwars.com/wiki/Gain_Master_of_Whispers",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 16,
+    "Completed": false
+  },
+  {
+    "Name": "Gain Norgu",
+    "Uri": "https://wiki.guildwars.com/wiki/Gain_Norgu",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 16,
+    "Completed": false
+  },
+  {
+    "Name": "Gain Sousuke",
+    "Uri": "https://wiki.guildwars.com/wiki/Gain_Sousuke",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 16,
+    "Completed": false
+  },
+  {
+    "Name": "Good Demon Hunting",
+    "Uri": "https://wiki.guildwars.com/wiki/Good_Demon_Hunting",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 16,
+    "Completed": false
+  },
+  {
+    "Name": "Holding the Line",
+    "Uri": "https://wiki.guildwars.com/wiki/Holding_the_Line",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 16,
+    "Completed": false
+  },
+  {
+    "Name": "Into the Fire",
+    "Uri": "https://wiki.guildwars.com/wiki/Into_the_Fire",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 16,
+    "Completed": false
+  },
+  {
+    "Name": "Invasion From Within",
+    "Uri": "https://wiki.guildwars.com/wiki/Invasion_From_Within",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 16,
+    "Completed": false
+  },
+  {
+    "Name": "Know Thine Enemy",
+    "Uri": "https://wiki.guildwars.com/wiki/Know_Thine_Enemy",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 16,
+    "Completed": false
+  },
+  {
+    "Name": "Kormir's Crusade",
+    "Uri": "https://wiki.guildwars.com/wiki/Kormir%27s_Crusade",
+    "Primary": true,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 16,
+    "Completed": false
+  },
+  {
+    "Name": "Money Back Guarantee",
+    "Uri": "https://wiki.guildwars.com/wiki/Money_Back_Guarantee",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 16,
+    "Completed": false
+  },
+  {
+    "Name": "Open Season",
+    "Uri": "https://wiki.guildwars.com/wiki/Open_Season",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 16,
+    "Completed": false
+  },
+  {
+    "Name": "The Apostate",
+    "Uri": "https://wiki.guildwars.com/wiki/The_Apostate",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 16,
+    "Completed": false
+  },
+  {
+    "Name": "The Last Patrol",
+    "Uri": "https://wiki.guildwars.com/wiki/The_Last_Patrol",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 16,
+    "Completed": false
+  },
+  {
+    "Name": "The Missing Patrol",
+    "Uri": "https://wiki.guildwars.com/wiki/The_Missing_Patrol",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 16,
+    "Completed": false
+  },
+  {
+    "Name": "The Oddbodies",
+    "Uri": "https://wiki.guildwars.com/wiki/The_Oddbodies_(quest)",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 16,
+    "Completed": false
+  },
+  {
+    "Name": "The Troubled Keeper",
+    "Uri": "https://wiki.guildwars.com/wiki/The_Troubled_Keeper",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 16,
+    "Completed": false
+  },
+  {
+    "Name": "They Only Come Out at Night",
+    "Uri": "https://wiki.guildwars.com/wiki/They_Only_Come_Out_at_Night",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 16,
+    "Completed": false
+  },
+  {
+    "Name": "Uncharted Territory",
+    "Uri": "https://wiki.guildwars.com/wiki/Uncharted_Territory",
+    "Primary": true,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 16,
+    "Completed": false
+  },
+  {
+    "Name": "Breaching the Stygian Veil",
+    "Uri": "https://wiki.guildwars.com/wiki/Breaching_the_Stygian_Veil",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 17,
+    "Completed": false
+  },
+  {
+    "Name": "Brood Wars",
+    "Uri": "https://wiki.guildwars.com/wiki/Brood_Wars",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 17,
+    "Completed": false
+  },
+  {
+    "Name": "Deathbringer Company",
+    "Uri": "https://wiki.guildwars.com/wiki/Deathbringer_Company",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 17,
+    "Completed": false
+  },
+  {
+    "Name": "Foundry Breakout",
+    "Uri": "https://wiki.guildwars.com/wiki/Foundry_Breakout",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 17,
+    "Completed": false
+  },
+  {
+    "Name": "Mallyx the Unyielding",
+    "Uri": "https://wiki.guildwars.com/wiki/Mallyx_the_Unyielding_(quest)",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 17,
+    "Completed": false
+  },
+  {
+    "Name": "The City of Torc'qua",
+    "Uri": "https://wiki.guildwars.com/wiki/The_City_of_Torc%27qua",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 17,
+    "Completed": false
+  },
+  {
+    "Name": "The Foundry of Failed Creations",
+    "Uri": "https://wiki.guildwars.com/wiki/The_Foundry_of_Failed_Creations_(quest)",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 17,
+    "Completed": false
+  },
+  {
+    "Name": "The Rifts Between Us",
+    "Uri": "https://wiki.guildwars.com/wiki/The_Rifts_Between_Us",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 17,
+    "Completed": false
+  },
+  {
+    "Name": "To the Rescue!",
+    "Uri": "https://wiki.guildwars.com/wiki/To_the_Rescue!",
+    "Primary": false,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 17,
+    "Completed": false
   }
 ]

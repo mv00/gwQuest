@@ -26,7 +26,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Repository\settings.json" />
     <None Include="Resources\Necromancer-tango-icon-20.png" />
     <None Include="Resources\Elementalist-tango-icon-20.png" />
     <None Include="Resources\Ranger-tango-icon-20.png" />

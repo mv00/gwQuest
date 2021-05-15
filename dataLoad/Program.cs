@@ -11,7 +11,7 @@ namespace dataLoad
     {
         static void Main()
         {
-            var doc = File.ReadAllText(@"C:\Users\Matte\Downloads\windsofchange.html");
+            var doc = File.ReadAllText(@"file.html");
             doc = doc.Replace("<br>", "");
             doc = doc.Replace("&nbsp;", "");
             doc = doc.Replace("height=\"19\">", "height=\"19\"/>");

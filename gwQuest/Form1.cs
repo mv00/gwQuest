@@ -156,7 +156,7 @@ namespace gwQuest
 
             if (listView1.Items.Count > 0)
             {
-                if (listView1.Items.Count >= index)
+                if (listView1.Items.Count > index)
                 {
                     listView1.Items[index].Selected = true;
                 }

@@ -1314,24 +1314,6 @@
     "Completed": false
   },
   {
-    "Name": "The Titan Source",
-    "Uri": "https://wiki.guildwars.com/wiki/The_Titan_Source",
-    "Primary": false,
-    "Profession": 0,
-    "Campaign": 1,
-    "Region": 6,
-    "Completed": false
-  },
-  {
-    "Name": "The Titan Source (Hard mode)",
-    "Uri": "https://wiki.guildwars.com/wiki/The_Titan_Source_(Hard_mode)",
-    "Primary": false,
-    "Profession": 0,
-    "Campaign": 1,
-    "Region": 6,
-    "Completed": false
-  },
-  {
     "Name": "The Titan Source (Hard mode)",
     "Uri": "https://wiki.guildwars.com/wiki/The_Titan_Source_(Hard_mode)",
     "Primary": false,

@@ -94,6 +94,22 @@ namespace gwQuest.Repository
 
                 Save();
             }
+
+            var lastDay = _quests.Where(q => q.Name == "The Titan Source");
+            if (lastDay.Count() == 2)
+            {
+                _quests.Remove(lastDay.First());
+
+                Save();
+            }
+
+            var lastDayHM = _quests.Where(q => q.Name == "The Titan Source (Hard mode)");
+            if (lastDayHM.Count() == 2)
+            {
+                _quests.Remove(lastDayHM.First());
+
+                Save();
+            }
         }
 
         private void Save()

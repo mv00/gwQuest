@@ -2465,7 +2465,33 @@
     "Region": 12,
     "Completed": false
   },
-
+  {
+    "Name": "A Land of Heroes",
+    "Uri": "https://wiki.guildwars.com/wiki/A_Land_of_Heroes",
+    "Primary": true,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 12,
+    "Completed": false
+  },
+  {
+    "Name": "Battle Preparations",
+    "Uri": "https://wiki.guildwars.com/wiki/Battle_Preparations",
+    "Primary": true,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 12,
+    "Completed": false
+  },
+  {
+    "Name": "Securing Champion's Dawn",
+    "Uri": "https://wiki.guildwars.com/wiki/Securing_Champion%27s_Dawn",
+    "Primary": true,
+    "Profession": 0,
+    "Campaign": 3,
+    "Region": 12,
+    "Completed": false
+  },
   {
     "Name": "A Bushel of Trouble",
     "Uri": "https://wiki.guildwars.com/wiki/A_Bushel_of_Trouble",

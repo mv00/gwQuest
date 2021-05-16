@@ -110,6 +110,38 @@ namespace gwQuest.Repository
 
                 Save();
             }
+
+
+            if (!_quests.Any(q => q.Name == "A Land of Heroes"))
+            {
+                _quests.Add(new Quest("A Land of Heroes",
+                    new Uri("https://wiki.guildwars.com/wiki/A_Land_of_Heroes"),
+                    true,
+                    Profession.None,
+                    Campaign.Nightfall,
+                    Region.Istan,
+                    false));
+            }
+            if (!_quests.Any(q => q.Name == "Battle Preparations"))
+            {
+                _quests.Add(new Quest("Battle Preparations",
+                    new Uri("https://wiki.guildwars.com/wiki/Battle_Preparations"),
+                    true,
+                    Profession.None,
+                    Campaign.Nightfall,
+                    Region.Istan,
+                    false));
+            }
+            if (!_quests.Any(q => q.Name == "Securing Champion's Dawn"))
+            {
+                _quests.Add(new Quest("Securing Champion's Dawn",
+                    new Uri("https://wiki.guildwars.com/wiki/Securing_Champion%27s_Dawn"),
+                    true,
+                    Profession.None,
+                    Campaign.Nightfall,
+                    Region.Istan,
+                    false));
+            }
         }
 
         private void Save()

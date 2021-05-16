@@ -80,6 +80,20 @@ namespace gwQuest.Repository
 
                 Save();
             }
+
+            if(!_quests.Any(q => q.Campaign == Campaign.Nightfall && q.Name == "Mysterious Message (Nightfall quest)"))
+            {
+                _quests.Add(
+                    new Quest("Mysterious Message (Nightfall quest)",
+                        new Uri("https://wiki.guildwars.com/wiki/Mysterious_Message_(Nightfall_quest)"),
+                        true,
+                        Profession.None,
+                        Campaign.Nightfall,
+                        Region.Kourna,
+                        false));
+
+                Save();
+            }
         }
 
         private void Save()

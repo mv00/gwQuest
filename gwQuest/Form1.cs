@@ -89,7 +89,7 @@ namespace gwQuest
 
         private void RefreshQuestList()
         {
-            var index = listView1.Items.Count > 0 ? listView1.SelectedItems[0]?.Index ?? 0 : 0;
+            var index = (listView1.SelectedItems.Count > 0 && listView1.Items.Count > 0) ? listView1.SelectedItems[0]?.Index ?? 0 : 0;
 
             listView1.SelectedItems.Clear();
             listView1.Items.Clear();
@@ -214,10 +214,14 @@ namespace gwQuest
             labelPrimaryImage.Visible = true;
             linkLabelQuest.Visible = true;
             labelQuestName.Visible = true;
-            button1.Visible = true;
-
 
             _activeQuest = (Quest)listView1.SelectedItems[0].Tag;
+
+            if(!_activeQuest.Completed)
+            {
+                button1.Visible = true;
+            }
+
             labelPrimary.Text = _activeQuest.Primary ? "Primary" : "Secondary";
             if (_activeQuest.Primary)
             {

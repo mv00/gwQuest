@@ -53,6 +53,7 @@ namespace gwQuest.Repository
                 using StreamReader reader = new(stream);
                 string result = reader.ReadToEnd();
                 _quests = JsonConvert.DeserializeObject<HashSet<Quest>>(result);
+                _originalQuests = new HashSet<Quest>(_quests.Select(q => q.Clone()));
 
                 return;
             }
@@ -60,9 +61,8 @@ namespace gwQuest.Repository
             {
                 string text = File.ReadAllText(_filePath);
                 _quests = JsonConvert.DeserializeObject<HashSet<Quest>>(text);
-            }
-
-            _originalQuests = new HashSet<Quest>(_quests.Select(q => q.Clone()));
+                _originalQuests = new HashSet<Quest>(_quests.Select(q => q.Clone()));
+            }           
 
             if (_quests.All(q => q.Campaign == Campaign.Prophecies) && _quests.Count == 153)
             {

@@ -23,5 +23,10 @@ namespace gwQuest.Domain
             Region = region;
             Completed = completed;
         }
+
+        public Quest Clone()
+        {
+            return new Quest(Name, new Uri(Uri.ToString()), Primary, Profession, Campaign, Region, Completed);
+        }
     }
 }

@@ -12,13 +12,13 @@ namespace gwQuest.Repository
     {
         void Update(Quest quest);
         IEnumerable<Quest> GetQuests(Func<Quest, bool> filter = null);
-
     }
 
     public class QuestRepository : IQuestRepository
     {
         private readonly string _filePath;
         private HashSet<Quest> _quests;
+        private HashSet<Quest> _originalQuests;
 
         public QuestRepository(string filePath)
         {
@@ -36,8 +36,6 @@ namespace gwQuest.Repository
 
             return _quests.Where(filter ?? (p => true));
         }
-
-
 
         public void Update(Quest quest)
         {
@@ -64,6 +62,8 @@ namespace gwQuest.Repository
                 _quests = JsonConvert.DeserializeObject<HashSet<Quest>>(text);
             }
 
+            _originalQuests = new HashSet<Quest>(_quests.Select(q => q.Clone()));
+
             if (_quests.All(q => q.Campaign == Campaign.Prophecies) && _quests.Count == 153)
             {
                 using Stream stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("gwQuest.Repository.quests.json");
@@ -77,11 +77,9 @@ namespace gwQuest.Repository
                 {
                     _quests.Add(quest);
                 }
-
-                Save();
             }
 
-            if(!_quests.Any(q => q.Campaign == Campaign.Nightfall && q.Name == "Mysterious Message (Nightfall quest)"))
+            if (!_quests.Any(q => q.Campaign == Campaign.Nightfall && q.Name == "Mysterious Message (Nightfall quest)"))
             {
                 _quests.Add(
                     new Quest("Mysterious Message (Nightfall quest)",
@@ -91,26 +89,19 @@ namespace gwQuest.Repository
                         Campaign.Nightfall,
                         Region.Kourna,
                         false));
-
-                Save();
             }
 
             var lastDay = _quests.Where(q => q.Name == "The Titan Source");
             if (lastDay.Count() == 2)
             {
                 _quests.Remove(lastDay.First());
-
-                Save();
             }
 
             var lastDayHM = _quests.Where(q => q.Name == "The Titan Source (Hard mode)");
             if (lastDayHM.Count() == 2)
             {
                 _quests.Remove(lastDayHM.First());
-
-                Save();
             }
-
 
             if (!_quests.Any(q => q.Name == "A Land of Heroes"))
             {
@@ -142,13 +133,26 @@ namespace gwQuest.Repository
                     Region.Istan,
                     false));
             }
+
+            var battleOfJahai = _quests.Where(q => q.Name == "The Battle of Jahai").FirstOrDefault();
+            if (battleOfJahai != null)
+            {
+                _quests.Remove(battleOfJahai);
+            }
+
+            Save();
         }
 
         private void Save()
         {
-            var questsToSave = _quests.OrderBy(q => q.Campaign).ThenBy(q => q.Region).ThenBy(q => q.Name);
-            string text = JsonConvert.SerializeObject(questsToSave, Formatting.Indented);
+            _quests = _quests.OrderBy(q => q.Campaign).ThenBy(q => q.Region).ThenBy(q => q.Name).ToHashSet();
+
+            if (_quests.SequenceEqual(_originalQuests))
+                return;
+
+            string text = JsonConvert.SerializeObject(_quests, Formatting.Indented);
             File.WriteAllText(_filePath, text);
+            _originalQuests = new HashSet<Quest>(_quests.Select(q => q.Clone()));
         }
     }
 }

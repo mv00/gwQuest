@@ -4,7 +4,7 @@ using System.Text.RegularExpressions;
 
 namespace gwQuest.Domain
 {
-    public static class RegionExtentions
+    public static class RegionExtensions
     {
         public static Region ToRegion(this string @object)
         {

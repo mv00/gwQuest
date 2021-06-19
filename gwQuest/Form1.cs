@@ -43,7 +43,7 @@ namespace gwQuest
 
             //listview for quests
             var imageList = new ImageList() { };
-            imageList.Images.Add("none", Resources.Resources.Tango_quest_icon_primary);
+            imageList.Images.Add("primary", Resources.Resources.primary);
             imageList.Images.Add("war", Resources.Resources.Warrior_tango_icon_20);
             imageList.Images.Add("monk", Resources.Resources.Monk_tango_icon_20);
             imageList.Images.Add("necro", Resources.Resources.Necromancer_tango_icon_20);
@@ -103,6 +103,9 @@ namespace gwQuest
             if (!checkBoxShowCompleted.Checked)
                 questsToShow = questsToShow.Where(q => !q.Completed);
 
+            if (checkBoxHidePrimary.Checked)
+                questsToShow = questsToShow.Where(q => !q.Primary);
+
 
             foreach (var quest in questsToShow.OrderBy(q => q.Name))
             {
@@ -117,6 +120,9 @@ namespace gwQuest
 
 
                 var displayProfQuest = quest.Profession == _settings.Professions[0] || quest.Profession == _settings.Professions[1];
+
+                if (quest.Primary)
+                    listItem.ImageIndex = listItem.ImageIndex = 0;
 
                 if (filterQuests && displayProfQuest)
                 {
@@ -137,7 +143,7 @@ namespace gwQuest
                         listItem.Tag = quest;
                     }
                     else
-                    {
+                    {                        
                         listItem.ImageIndex = (int)quest.Profession;
                         listItem.Text = questName;
                         listItem.Tag = quest;
@@ -239,7 +245,7 @@ namespace gwQuest
         private void LinkLabelQuest_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             var url = _activeQuest.Uri.ToString().Replace("&", "^&");
-            Process.Start(new ProcessStartInfo("cmd", $"/c start {url}") { CreateNoWindow = true });
+            Process.Start(url);
         }
 
         private void Button1_Click(object sender, EventArgs e)
@@ -275,7 +281,12 @@ namespace gwQuest
             RefreshQuestList();
         }
 
-        private void ComboBoxCampaign_SelectedIndexChanged(object sender, System.EventArgs e)
+        private void CheckBoxHidePrimary_CheckedChanged(object sender, EventArgs e)
+        {
+            RefreshQuestList();
+        }
+
+        private void ComboBoxCampaign_SelectedIndexChanged(object sender, EventArgs e)
         {
             var newCampaign = ((string)comboBoxCampaign.SelectedItem).ToCampaign();
             if (_settings.Campaign == 0)
@@ -316,5 +327,7 @@ namespace gwQuest
             RefreshQuestList();
         }
         #endregion
+
+
     }
 }

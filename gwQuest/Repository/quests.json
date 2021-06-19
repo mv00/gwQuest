@@ -1431,24 +1431,6 @@
     "Completed": false
   },
   {
-    "Name": "Capturing the Orrian Tome",
-    "Uri": "https://wiki.guildwars.com/wiki/Capturing_the_Orrian_Tome",
-    "Primary": false,
-    "Profession": 0,
-    "Campaign": 2,
-    "Region": 9,
-    "Completed": false
-  },
-  {
-    "Name": "Chaos in Kryta",
-    "Uri": "https://wiki.guildwars.com/wiki/Chaos_in_Kryta",
-    "Primary": false,
-    "Profession": 0,
-    "Campaign": 2,
-    "Region": 9,
-    "Completed": false
-  },
-  {
     "Name": "Charting the Forests",
     "Uri": "https://wiki.guildwars.com/wiki/Charting_the_Forests",
     "Primary": false,
@@ -1467,27 +1449,9 @@
     "Completed": false
   },
   {
-    "Name": "Chasing Zenmai",
-    "Uri": "https://wiki.guildwars.com/wiki/Chasing_Zenmai",
-    "Primary": false,
-    "Profession": 0,
-    "Campaign": 2,
-    "Region": 9,
-    "Completed": false
-  },
-  {
     "Name": "Closer to the Stars",
     "Uri": "https://wiki.guildwars.com/wiki/Closer_to_the_Stars",
     "Primary": true,
-    "Profession": 0,
-    "Campaign": 2,
-    "Region": 9,
-    "Completed": false
-  },
-  {
-    "Name": "Deactivating P.O.X.",
-    "Uri": "https://wiki.guildwars.com/wiki/Deactivating_P.O.X.",
-    "Primary": false,
     "Profession": 0,
     "Campaign": 2,
     "Region": 9,
@@ -1640,15 +1604,6 @@
   {
     "Name": "Medical Emergency",
     "Uri": "https://wiki.guildwars.com/wiki/Medical_Emergency",
-    "Primary": false,
-    "Profession": 0,
-    "Campaign": 2,
-    "Region": 9,
-    "Completed": false
-  },
-  {
-    "Name": "Minister's Test",
-    "Uri": "https://wiki.guildwars.com/wiki/Minister%27s_Test",
     "Primary": false,
     "Profession": 0,
     "Campaign": 2,
@@ -3044,15 +2999,6 @@
   {
     "Name": "Data Mining",
     "Uri": "https://wiki.guildwars.com/wiki/Data_Mining",
-    "Primary": false,
-    "Profession": 0,
-    "Campaign": 3,
-    "Region": 14,
-    "Completed": false
-  },
-  {
-    "Name": "Deactivating N.O.X.",
-    "Uri": "https://wiki.guildwars.com/wiki/Deactivating_N.O.X.",
     "Primary": false,
     "Profession": 0,
     "Campaign": 3,

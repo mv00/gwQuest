@@ -140,6 +140,42 @@ namespace gwQuest.Repository
                 _quests.Remove(battleOfJahai);
             }
 
+            var capturingOrrianTome = _quests.Where(q => q.Name == "Capturing the Orrian Tome").FirstOrDefault();
+            if (capturingOrrianTome != null)
+            {
+                _quests.Remove(capturingOrrianTome);
+            }
+
+            var chaosInKryta = _quests.Where(q => q.Name == "Chaos in Kryta").FirstOrDefault();
+            if (chaosInKryta != null)
+            {
+                _quests.Remove(chaosInKryta);
+            }
+
+            var ministersTest = _quests.Where(q => q.Name == "Minister's Test").FirstOrDefault();
+            if (ministersTest != null)
+            {
+                _quests.Remove(ministersTest);
+            }
+
+            var chasingZenmai = _quests.Where(q => q.Name == "Chasing Zenmai" && q.Campaign == Campaign.Cantha).FirstOrDefault();
+            if (chasingZenmai != null)
+            {
+                _quests.Remove(chasingZenmai);
+            }
+
+            var deactivationPox = _quests.Where(q => q.Name == "Deactivating P.O.X." && q.Campaign == Campaign.Cantha).FirstOrDefault();
+            if (deactivationPox != null)
+            {
+                _quests.Remove(deactivationPox);
+            }
+
+            var deactivationNox = _quests.Where(q => q.Name == "Deactivating N.O.X." && q.Campaign == Campaign.Nightfall).FirstOrDefault();
+            if (deactivationNox != null)
+            {
+                _quests.Remove(deactivationNox);
+            }
+
             Save();
         }
 

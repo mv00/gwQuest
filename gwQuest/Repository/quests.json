@@ -2108,7 +2108,7 @@
   {
     "Name": "Befriending the Luxons",
     "Uri": "https://wiki.guildwars.com/wiki/Befriending_the_Luxons",
-    "Primary": false,
+    "Primary": true,
     "Profession": 0,
     "Campaign": 2,
     "Region": 11,
@@ -2126,7 +2126,7 @@
   {
     "Name": "City Under Attack",
     "Uri": "https://wiki.guildwars.com/wiki/City_Under_Attack",
-    "Primary": false,
+    "Primary": true,
     "Profession": 0,
     "Campaign": 2,
     "Region": 11,
@@ -2135,7 +2135,7 @@
   {
     "Name": "Fort Aspenwood",
     "Uri": "https://wiki.guildwars.com/wiki/Fort_Aspenwood_(quest)",
-    "Primary": false,
+    "Primary": true,
     "Profession": 0,
     "Campaign": 2,
     "Region": 11,
@@ -2162,7 +2162,7 @@
   {
     "Name": "Journey to the Whirlpool",
     "Uri": "https://wiki.guildwars.com/wiki/Journey_to_the_Whirlpool",
-    "Primary": false,
+    "Primary": true,
     "Profession": 0,
     "Campaign": 2,
     "Region": 11,
@@ -2261,7 +2261,7 @@
   {
     "Name": "Stolen Eggs",
     "Uri": "https://wiki.guildwars.com/wiki/Stolen_Eggs",
-    "Primary": false,
+    "Primary": true,
     "Profession": 0,
     "Campaign": 2,
     "Region": 11,
@@ -2315,7 +2315,7 @@
   {
     "Name": "The Jade Quarry",
     "Uri": "https://wiki.guildwars.com/wiki/The_Jade_Quarry_(Luxon_quest)",
-    "Primary": false,
+    "Primary": true,
     "Profession": 0,
     "Campaign": 2,
     "Region": 11,

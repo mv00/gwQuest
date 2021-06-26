@@ -17,7 +17,7 @@ namespace gwQuest.Repository
     public class QuestRepository : IQuestRepository
     {
         private readonly string _filePath;
-        private HashSet<Quest> _quests;
+        private QuestList _questList;
         private HashSet<Quest> _originalQuests;
 
         public QuestRepository(string filePath)
@@ -31,164 +31,64 @@ namespace gwQuest.Repository
 
         public IEnumerable<Quest> GetQuests(Func<Quest, bool> filter = null)
         {
-            if (_quests == null)
+            if (_questList.Quests == null)
                 Load();
 
-            return _quests.Where(filter ?? (p => true));
+            return _questList.Quests.Where(filter ?? (p => true));
         }
 
         public void Update(Quest quest)
         {
-            _quests.RemoveWhere(q => q.Name == quest.Name);
-            _quests.Add(quest);
+            _questList.Quests.RemoveWhere(q => q.Name == quest.Name);
+            _questList.Quests.Add(quest);
 
             Save();
         }
 
         private void Load()
         {
-            if (!File.Exists(Path.Combine(Environment.CurrentDirectory, _filePath)))
-            {
-                using Stream stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("gwQuest.Repository.quests.json");
-                using StreamReader reader = new(stream);
-                string result = reader.ReadToEnd();
-                _quests = JsonConvert.DeserializeObject<HashSet<Quest>>(result);
-                _originalQuests = new HashSet<Quest>(_quests.Select(q => q.Clone()));
+            string result;
+            Stream stream;
 
-                return;
-            }
+            if (File.Exists(Path.Combine(Environment.CurrentDirectory, _filePath)))
+                stream = new FileStream(_filePath, FileMode.Open);
             else
-            {
-                string text = File.ReadAllText(_filePath);
-                _quests = JsonConvert.DeserializeObject<HashSet<Quest>>(text);
-                _originalQuests = new HashSet<Quest>(_quests.Select(q => q.Clone()));
-            }           
+                stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("gwQuest.Repository.quests.json");
 
-            if (_quests.All(q => q.Campaign == Campaign.Prophecies) && _quests.Count == 153)
-            {
-                using Stream stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("gwQuest.Repository.quests.json");
-                using StreamReader reader = new(stream);
-                string result = reader.ReadToEnd();
-                HashSet<Quest> nonProphQuests = JsonConvert.DeserializeObject<HashSet<Quest>>(result)
-                    .Where(q => q.Campaign != Campaign.Prophecies)
-                    .ToHashSet();
+            using StreamReader reader = new(stream);
+            result = reader.ReadToEnd();
 
-                foreach (var quest in nonProphQuests)
-                {
-                    _quests.Add(quest);
-                }
+            try
+            {
+                _questList = JsonConvert.DeserializeObject<QuestList>(result);
+            }
+            catch (JsonSerializationException)
+            {
+                var quests = JsonConvert.DeserializeObject<HashSet<Quest>>(result);
+                _questList = new QuestList(new MetaData(new Version(1, 0, 0, 0)), quests);
             }
 
-            if (!_quests.Any(q => q.Campaign == Campaign.Nightfall && q.Name == "Mysterious Message (Nightfall quest)"))
-            {
-                _quests.Add(
-                    new Quest("Mysterious Message (Nightfall quest)",
-                        new Uri("https://wiki.guildwars.com/wiki/Mysterious_Message_(Nightfall_quest)"),
-                        true,
-                        Profession.None,
-                        Campaign.Nightfall,
-                        Region.Kourna,
-                        false));
-            }
+            _originalQuests = new HashSet<Quest>(_questList.Quests.Select(q => q.Clone()));
+            stream.Dispose();
 
-            var lastDay = _quests.Where(q => q.Name == "The Titan Source");
-            if (lastDay.Count() == 2)
+            if (_questList.IsUpgradeAvailable())
             {
-                _quests.Remove(lastDay.First());
+                _questList = Versioning.Upgrade(_questList);
+                Save();
             }
-
-            var lastDayHM = _quests.Where(q => q.Name == "The Titan Source (Hard mode)");
-            if (lastDayHM.Count() == 2)
-            {
-                _quests.Remove(lastDayHM.First());
-            }
-
-            if (!_quests.Any(q => q.Name == "A Land of Heroes"))
-            {
-                _quests.Add(new Quest("A Land of Heroes",
-                    new Uri("https://wiki.guildwars.com/wiki/A_Land_of_Heroes"),
-                    true,
-                    Profession.None,
-                    Campaign.Nightfall,
-                    Region.Istan,
-                    false));
-            }
-            if (!_quests.Any(q => q.Name == "Battle Preparations"))
-            {
-                _quests.Add(new Quest("Battle Preparations",
-                    new Uri("https://wiki.guildwars.com/wiki/Battle_Preparations"),
-                    true,
-                    Profession.None,
-                    Campaign.Nightfall,
-                    Region.Istan,
-                    false));
-            }
-            if (!_quests.Any(q => q.Name == "Securing Champion's Dawn"))
-            {
-                _quests.Add(new Quest("Securing Champion's Dawn",
-                    new Uri("https://wiki.guildwars.com/wiki/Securing_Champion%27s_Dawn"),
-                    true,
-                    Profession.None,
-                    Campaign.Nightfall,
-                    Region.Istan,
-                    false));
-            }
-
-            var battleOfJahai = _quests.Where(q => q.Name == "The Battle of Jahai").FirstOrDefault();
-            if (battleOfJahai != null)
-            {
-                _quests.Remove(battleOfJahai);
-            }
-
-            var capturingOrrianTome = _quests.Where(q => q.Name == "Capturing the Orrian Tome").FirstOrDefault();
-            if (capturingOrrianTome != null)
-            {
-                _quests.Remove(capturingOrrianTome);
-            }
-
-            var chaosInKryta = _quests.Where(q => q.Name == "Chaos in Kryta").FirstOrDefault();
-            if (chaosInKryta != null)
-            {
-                _quests.Remove(chaosInKryta);
-            }
-
-            var ministersTest = _quests.Where(q => q.Name == "Minister's Test").FirstOrDefault();
-            if (ministersTest != null)
-            {
-                _quests.Remove(ministersTest);
-            }
-
-            var chasingZenmai = _quests.Where(q => q.Name == "Chasing Zenmai" && q.Campaign == Campaign.Cantha).FirstOrDefault();
-            if (chasingZenmai != null)
-            {
-                _quests.Remove(chasingZenmai);
-            }
-
-            var deactivationPox = _quests.Where(q => q.Name == "Deactivating P.O.X." && q.Campaign == Campaign.Cantha).FirstOrDefault();
-            if (deactivationPox != null)
-            {
-                _quests.Remove(deactivationPox);
-            }
-
-            var deactivationNox = _quests.Where(q => q.Name == "Deactivating N.O.X." && q.Campaign == Campaign.Nightfall).FirstOrDefault();
-            if (deactivationNox != null)
-            {
-                _quests.Remove(deactivationNox);
-            }
-
-            Save();
         }
 
         private void Save()
         {
-            _quests = _quests.OrderBy(q => q.Campaign).ThenBy(q => q.Region).ThenBy(q => q.Name).ToHashSet();
+            HashSet<Quest> sortedQuests = _questList.Quests.OrderBy(q => q.Campaign).ThenBy(q => q.Region).ThenBy(q => q.Name).ToHashSet();
+            _questList = new QuestList(_questList.MetaData, sortedQuests);
 
-            if (_quests.SequenceEqual(_originalQuests))
+            if (_questList.Quests.SequenceEqual(_originalQuests))
                 return;
 
-            string text = JsonConvert.SerializeObject(_quests, Formatting.Indented);
+            string text = JsonConvert.SerializeObject(_questList, Formatting.Indented);
             File.WriteAllText(_filePath, text);
-            _originalQuests = new HashSet<Quest>(_quests.Select(q => q.Clone()));
+            _originalQuests = new HashSet<Quest>(_questList.Quests.Select(q => q.Clone()));
         }
     }
 }

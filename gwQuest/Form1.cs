@@ -41,6 +41,13 @@ namespace gwQuest
             comboBoxRegion.SelectedIndex = comboBoxRegion.FindStringExact(_settings.Region.ToReadableString());
             comboBoxRegion.SelectedIndexChanged += new EventHandler(ComboBoxRegion_SelectedIndexChanged);
 
+            //filters
+            checkBoxHidePrimary.Checked = _settings.HidePrimary;
+            checkBoxHidePrimary.CheckedChanged += new EventHandler(CheckBoxHidePrimary_CheckedChanged);
+            
+            checkBoxShowCompleted.Checked = _settings.ShowCompleted;
+            checkBoxShowCompleted.CheckedChanged += new EventHandler(CheckBoxShowCompleted_CheckedChanged);
+
             //listview for quests
             var imageList = new ImageList() { };
             imageList.Images.Add("primary", Resources.Resources.primary);
@@ -62,28 +69,6 @@ namespace gwQuest
             listView1.Columns[0].Width = listView1.Width - 4 - SystemInformation.VerticalScrollBarWidth;
             listView1.SelectedIndexChanged += new EventHandler(ActiveQuestChanged);
 
-            //main profession
-            comboBoxProfessionMain.Items.Add(Profession.None);
-            comboBoxProfessionMain.Items.Add(Profession.Warrior);
-            comboBoxProfessionMain.Items.Add(Profession.Monk);
-            comboBoxProfessionMain.Items.Add(Profession.Necromancer);
-            comboBoxProfessionMain.Items.Add(Profession.Ranger);
-            comboBoxProfessionMain.Items.Add(Profession.Elementalist);
-            comboBoxProfessionMain.Items.Add(Profession.Mesmer);
-
-            comboBoxProfessionMain.SelectedIndex = (int)_settings.Professions.First();
-
-            //secondary profession
-            comboBoxProfessionSecondary.Items.Add(Profession.None);
-            comboBoxProfessionSecondary.Items.Add(Profession.Warrior);
-            comboBoxProfessionSecondary.Items.Add(Profession.Monk);
-            comboBoxProfessionSecondary.Items.Add(Profession.Necromancer);
-            comboBoxProfessionSecondary.Items.Add(Profession.Ranger);
-            comboBoxProfessionSecondary.Items.Add(Profession.Elementalist);
-            comboBoxProfessionSecondary.Items.Add(Profession.Mesmer);
-
-            comboBoxProfessionSecondary.SelectedIndex = (int)_settings.Professions.Skip(1).First();
-
             RefreshQuestList();
         }
 
@@ -94,7 +79,6 @@ namespace gwQuest
             listView1.SelectedItems.Clear();
             listView1.Items.Clear();
 
-            var filterQuests = _settings.Professions[0] != Profession.None && _settings.Professions[1] != Profession.None;
             var currentCampaign = ((string)comboBoxCampaign.SelectedItem).ToCampaign();
             var currentRegion = ((string)comboBoxRegion.SelectedItem).ToRegion();
 
@@ -118,42 +102,21 @@ namespace gwQuest
                     listItem.ForeColor = Color.Green;
                 }
 
-
-                var displayProfQuest = quest.Profession == _settings.Professions[0] || quest.Profession == _settings.Professions[1];
-
                 if (quest.Primary)
                     listItem.ImageIndex = listItem.ImageIndex = 0;
 
-                if (filterQuests && displayProfQuest)
+                if (quest.Profession == Profession.None)
+                {
+                    listItem.Text = questName;
+                    listItem.Tag = quest;
+                }
+                else
                 {
                     listItem.ImageIndex = (int)quest.Profession;
                     listItem.Text = questName;
                     listItem.Tag = quest;
                 }
-                else if (filterQuests && (quest.Profession == Profession.None))
-                {
-                    listItem.Text = questName;
-                    listItem.Tag = quest;
-                }
-                else if (!filterQuests)
-                {
-                    if (quest.Profession == Profession.None)
-                    {
-                        listItem.Text = questName;
-                        listItem.Tag = quest;
-                    }
-                    else
-                    {                        
-                        listItem.ImageIndex = (int)quest.Profession;
-                        listItem.Text = questName;
-                        listItem.Tag = quest;
-                    }
 
-                }
-                else
-                {
-                    continue;
-                }
                 listView1.Alignment = ListViewAlignment.SnapToGrid;
                 listView1.HideSelection = false;
                 listView1.AutoArrange = true;
@@ -262,33 +225,17 @@ namespace gwQuest
             RefreshQuestList();
         }
 
-        private void ComboBoxProfessionMain_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (_settings.Professions[0] == (Profession)comboBoxProfessionMain.SelectedItem)
-                return;
-
-            _settings.Professions[0] = (Profession)comboBoxProfessionMain.SelectedItem;
-            _settingsRepository.Save(_settings);
-            RefreshQuestList();
-        }
-
-        private void ComboBoxProfessionSecondary_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (_settings.Professions[1] == (Profession)comboBoxProfessionSecondary.SelectedItem)
-                return;
-
-            _settings.Professions[1] = (Profession)comboBoxProfessionSecondary.SelectedItem;
-            _settingsRepository.Save(_settings);
-            RefreshQuestList();
-        }
-
         private void CheckBoxShowCompleted_CheckedChanged(object sender, EventArgs e)
         {
+            _settings.ShowCompleted = checkBoxShowCompleted.Checked;
+            _settingsRepository.Save(_settings);
             RefreshQuestList();
         }
 
         private void CheckBoxHidePrimary_CheckedChanged(object sender, EventArgs e)
         {
+            _settings.HidePrimary = checkBoxHidePrimary.Checked;
+            _settingsRepository.Save(_settings);
             RefreshQuestList();
         }
 

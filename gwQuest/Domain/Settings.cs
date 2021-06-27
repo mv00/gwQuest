@@ -2,8 +2,9 @@
 {
     public class Settings
     {
-        public Profession[] Professions { get; set; }
         public Region Region { get; set; }
         public Campaign Campaign { get; set; }
+        public bool HidePrimary { get; set; }
+        public bool ShowCompleted { get; set; }
     }
 }

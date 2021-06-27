@@ -30,10 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.lblCampaign = new System.Windows.Forms.Label();
-            this.labelProfessionMain = new System.Windows.Forms.Label();
-            this.comboBoxProfessionMain = new System.Windows.Forms.ComboBox();
             this.comboBoxCampaign = new System.Windows.Forms.ComboBox();
-            this.comboBoxProfessionSecondary = new System.Windows.Forms.ComboBox();
             this.checkBoxShowCompleted = new System.Windows.Forms.CheckBox();
             this.labelQuestDetails = new System.Windows.Forms.Label();
             this.linkLabelQuest = new System.Windows.Forms.LinkLabel();
@@ -63,25 +60,6 @@
             this.lblCampaign.TabIndex = 2;
             this.lblCampaign.Text = "Campaign";
             // 
-            // labelProfessionMain
-            // 
-            this.labelProfessionMain.AutoSize = true;
-            this.labelProfessionMain.Location = new System.Drawing.Point(384, 487);
-            this.labelProfessionMain.Name = "labelProfessionMain";
-            this.labelProfessionMain.Size = new System.Drawing.Size(61, 13);
-            this.labelProfessionMain.TabIndex = 4;
-            this.labelProfessionMain.Text = "Professions";
-            // 
-            // comboBoxProfessionMain
-            // 
-            this.comboBoxProfessionMain.DisplayMember = "Name";
-            this.comboBoxProfessionMain.FormattingEnabled = true;
-            this.comboBoxProfessionMain.Location = new System.Drawing.Point(384, 503);
-            this.comboBoxProfessionMain.Name = "comboBoxProfessionMain";
-            this.comboBoxProfessionMain.Size = new System.Drawing.Size(121, 21);
-            this.comboBoxProfessionMain.TabIndex = 3;
-            this.comboBoxProfessionMain.SelectedIndexChanged += new System.EventHandler(this.ComboBoxProfessionMain_SelectedIndexChanged);
-            // 
             // comboBoxCampaign
             // 
             this.comboBoxCampaign.DisplayMember = "Name";
@@ -92,16 +70,6 @@
             this.comboBoxCampaign.TabIndex = 1;
             this.comboBoxCampaign.SelectedIndexChanged += new System.EventHandler(this.ComboBoxCampaign_SelectedIndexChanged);
             // 
-            // comboBoxProfessionSecondary
-            // 
-            this.comboBoxProfessionSecondary.DisplayMember = "Name";
-            this.comboBoxProfessionSecondary.FormattingEnabled = true;
-            this.comboBoxProfessionSecondary.Location = new System.Drawing.Point(384, 530);
-            this.comboBoxProfessionSecondary.Name = "comboBoxProfessionSecondary";
-            this.comboBoxProfessionSecondary.Size = new System.Drawing.Size(121, 21);
-            this.comboBoxProfessionSecondary.TabIndex = 5;
-            this.comboBoxProfessionSecondary.SelectedIndexChanged += new System.EventHandler(this.ComboBoxProfessionSecondary_SelectedIndexChanged);
-            // 
             // checkBoxShowCompleted
             // 
             this.checkBoxShowCompleted.AutoSize = true;
@@ -111,7 +79,6 @@
             this.checkBoxShowCompleted.TabIndex = 6;
             this.checkBoxShowCompleted.Text = "Show completed quests";
             this.checkBoxShowCompleted.UseVisualStyleBackColor = true;
-            this.checkBoxShowCompleted.CheckedChanged += new System.EventHandler(this.CheckBoxShowCompleted_CheckedChanged);
             // 
             // labelQuestDetails
             // 
@@ -293,7 +260,6 @@
             this.checkBoxHidePrimary.TabIndex = 20;
             this.checkBoxHidePrimary.Text = "Hide primary quests";
             this.checkBoxHidePrimary.UseVisualStyleBackColor = true;
-            this.checkBoxHidePrimary.CheckedChanged += new System.EventHandler(this.CheckBoxHidePrimary_CheckedChanged);
             // 
             // Form1
             // 
@@ -315,11 +281,8 @@
             this.Controls.Add(this.labelPrimaryImage);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.labelQuestName);
-            this.Controls.Add(this.comboBoxProfessionSecondary);
             this.Controls.Add(this.labelPrimary);
-            this.Controls.Add(this.labelProfessionMain);
             this.Controls.Add(this.linkLabelQuest);
-            this.Controls.Add(this.comboBoxProfessionMain);
             this.Controls.Add(this.labelQuestDetails);
             this.Controls.Add(this.lblCampaign);
             this.Controls.Add(this.comboBoxCampaign);
@@ -334,9 +297,6 @@
         #endregion
         private System.Windows.Forms.ComboBox comboBoxCampaign;
         private System.Windows.Forms.Label lblCampaign;
-        private System.Windows.Forms.Label labelProfessionMain;
-        private System.Windows.Forms.ComboBox comboBoxProfessionMain;
-        private System.Windows.Forms.ComboBox comboBoxProfessionSecondary;
         private System.Windows.Forms.CheckBox checkBoxShowCompleted;
         private System.Windows.Forms.Label labelQuestDetails;
         private System.Windows.Forms.LinkLabel linkLabelQuest;

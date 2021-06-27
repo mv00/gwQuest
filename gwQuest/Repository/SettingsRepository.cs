@@ -33,31 +33,15 @@ namespace gwQuest.Repository
 
         public void Load()
         {
-            try
-            {
-                if (!File.Exists(Path.Combine(Environment.CurrentDirectory, _filePath)))
-                {
-                    _settings = new Settings { Campaign = Campaign.Prophecies, Region = Region.Ascalon, Professions = new Profession[] { 0, 0 } };
-                    return;
-                }
-            }
-            catch (Exception)
-            {
-                var message = $"Environment.CurrentDirectory: {Environment.CurrentDirectory}";
-                throw new Exception(message);
-            }
 
-            string text = File.ReadAllText(_filePath);
-
-            try
+            if (File.Exists(Path.Combine(Environment.CurrentDirectory, _filePath)))
             {
-                _settings = JsonConvert.DeserializeObject<Settings>(text);
+                _settings = JsonConvert.DeserializeObject<Settings>(File.ReadAllText(_filePath));
             }
-
-            catch (JsonSerializationException)
+            else
             {
-                List<Profession> list = JsonConvert.DeserializeObject<List<Profession>>(text);
-                _settings = new Settings { Campaign = Campaign.Prophecies, Region = Region.Ascalon, Professions = new Profession[] { list[0], list[1] } };
+                _settings = new Settings { Campaign = Campaign.Prophecies, Region = Region.Ascalon };
+                return;
             }
         }
 

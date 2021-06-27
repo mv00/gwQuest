@@ -226,6 +226,12 @@ namespace gwQuest
             if(!_activeQuest.Completed)
             {
                 button1.Visible = true;
+                button1.Text = "Completed";
+            }
+            else if(_activeQuest.Completed)
+            {
+                button1.Visible = true;
+                button1.Text = "Mark as uncompleted";
             }
 
             labelPrimary.Text = _activeQuest.Primary ? "Primary" : "Secondary";
@@ -250,7 +256,7 @@ namespace gwQuest
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            _activeQuest.Completed = true;
+            _activeQuest.Completed = !_activeQuest.Completed;
             _questService.Update(_activeQuest);
 
             RefreshQuestList();
